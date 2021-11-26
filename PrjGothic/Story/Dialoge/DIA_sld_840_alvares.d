@@ -1,191 +1,159 @@
-
 instance DIA_ALVARES_EXIT(C_INFO)
 {
-	npc = sld_840_alvares;
-	nr = 999;
-	condition = dia_alvares_exit_condition;
-	information = dia_alvares_exit_info;
-	permanent = TRUE;
-	description = DIALOG_ENDE;
+        npc = sld_840_alvares;
+        nr = 999;
+        condition = dia_alvares_exit_condition;
+        information = dia_alvares_exit_info;
+        permanent = TRUE;
+        description = DIALOG_ENDE;
 };
-
-
 func int dia_alvares_exit_condition()
 {
-	return TRUE;
+        return TRUE;
 };
-
 func void dia_alvares_exit_info()
 {
-	AI_StopProcessInfos(self);
+        AI_StopProcessInfos(self);
 };
-
-
 instance DIA_ALVARES_HAUAB(C_INFO)
 {
-	npc = sld_840_alvares;
-	nr = 4;
-	condition = dia_alvares_hauab_condition;
-	information = dia_alvares_hauab_info;
-	permanent = FALSE;
-	important = TRUE;
+        npc = sld_840_alvares;
+        nr = 4;
+        condition = dia_alvares_hauab_condition;
+        information = dia_alvares_hauab_info;
+        permanent = FALSE;
+        important = TRUE;
 };
-
-
 func int dia_alvares_hauab_condition()
 {
-	if(Npc_IsInState(self,zs_talk))
-	{
-		return TRUE;
-	};
+        if(Npc_IsInState(self,zs_talk))
+        {
+                return TRUE;
+        };
 };
-
 func void dia_alvares_hauab_info()
 {
-	AKILS_SLDSTILLTHERE = TRUE;
-	AI_Output(self,other,"DIA_Alvares_HAUAB_11_00");	//Что бы ни привело тебя сюда - тебе лучше забыть об этом и убраться подальше.
-	Log_CreateTopic(TOPIC_AKILSSLDSTILLTHERE,LOG_MISSION);
-	Log_SetTopicStatus(TOPIC_AKILSSLDSTILLTHERE,LOG_RUNNING);
-	b_logentry(TOPIC_AKILSSLDSTILLTHERE,"Фермеру Акилу угрожают наемники.");
-	AI_StopProcessInfos(self);
+        AKILS_SLDSTILLTHERE = TRUE;
+        B_AI_Output(self,other,"DIA_Alvares_HAUAB_11_00");        //Что бы ни привело тебя сюда - тебе лучше забыть об этом и убраться подальше.
+        Log_CreateTopic(TOPIC_AKILSSLDSTILLTHERE,LOG_MISSION);
+        Log_SetTopicStatus(TOPIC_AKILSSLDSTILLTHERE,LOG_RUNNING);
+        b_logentry(TOPIC_AKILSSLDSTILLTHERE,TOPIC_AKILSSLDSTILLTHERE_description_521); // "Фермеру Акилу угрожают наемники."
+        AI_StopProcessInfos(self);
 };
-
-
 instance DIA_ALVARES_ATTACK(C_INFO)
 {
-	npc = sld_840_alvares;
-	nr = 6;
-	condition = dia_alvares_attack_condition;
-	information = dia_alvares_attack_info;
-	permanent = FALSE;
-	important = TRUE;
+        npc = sld_840_alvares;
+        nr = 6;
+        condition = dia_alvares_attack_condition;
+        information = dia_alvares_attack_info;
+        permanent = FALSE;
+        important = TRUE;
 };
-
-
 func int dia_alvares_attack_condition()
 {
-	if(Npc_KnowsInfo(other,dia_alvares_hauab) && Npc_IsInState(self,zs_talk))
-	{
-		return TRUE;
-	};
+        if(Npc_KnowsInfo(other,dia_alvares_hauab) && Npc_IsInState(self,zs_talk))
+        {
+                return TRUE;
+        };
 };
-
 func void dia_alvares_attack_info()
 {
-	AI_Output(self,other,"DIA_Alvares_ATTACK_11_00");	//Эй, ты все еще здесь. Я дам тебе выбор, чужак: проваливай или умри!
-	Info_ClearChoices(dia_alvares_attack);
-	Info_AddChoice(dia_alvares_attack,"Кто вы такие, парни - пара клоунов?",dia_alvares_attack_kerle);
-	Info_AddChoice(dia_alvares_attack,"Я хочу присоединиться к вам, наемникам.",dia_alvares_attack_soeldner);
-	Info_AddChoice(dia_alvares_attack,"Вы, парни, сейчас исчезнете отсюда. Все понятно?",dia_alvares_attack_witz);
-	Info_AddChoice(dia_alvares_attack,"Мне не нужны проблемы.",dia_alvares_attack_aerger);
-	if(MIS_BALTRAM_SCOUTAKIL == LOG_RUNNING)
-	{
-		Info_AddChoice(dia_alvares_attack,"Я просто пришел сюда за товаром.",dia_alvares_attack_lieferung);
-	};
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_11_00");       //Эй, ты все еще здесь. Я дам тебе выбор, чужак: проваливай или умри!
+        Info_ClearChoices(dia_alvares_attack);
+        Info_AddChoice(dia_alvares_attack,dia_alvares_attack_kerle_description,dia_alvares_attack_kerle); // "Кто вы такие парни - пара клоунов?"
+        Info_AddChoice(dia_alvares_attack,dia_alvares_attack_soeldner_description,dia_alvares_attack_soeldner); // "Я хочу присоединиться к вам наемникам."
+        Info_AddChoice(dia_alvares_attack,dia_alvares_attack_witz_description,dia_alvares_attack_witz); // "Вы парни сейчас исчезнете отсюда. Все понятно?"
+        Info_AddChoice(dia_alvares_attack,dia_alvares_attack_aerger_description,dia_alvares_attack_aerger); // "Мне не нужны проблемы."
+        if(MIS_BALTRAM_SCOUTAKIL == LOG_RUNNING)
+        {
+                Info_AddChoice(dia_alvares_attack,dia_alvares_attack_lieferung_description,dia_alvares_attack_lieferung); // "Я просто пришел сюда за товаром."
+        };
 };
-
 func void dia_alvares_attack_witz()
 {
-	AI_Output(other,self,"DIA_Alvares_ATTACK_Witz_15_00");	//Вы, парни, сейчас исчезнете отсюда. Все понятно?
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Witz_11_01");	//Смотри-ка, новый герой нарисовался - и очень глупый герой.
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Witz_11_02");	//Ты знаешь, о чем я думаю?
-	AI_Output(other,self,"DIA_Alvares_ATTACK_Witz_15_03");	//Да кому какое дело, о чем ты думаешь?
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Witz_11_04");	//Я думаю, что хороший герой - это мертвый герой. Так что сделай мне одолжение - умри поскорее!
-	AI_StopProcessInfos(self);
-	b_attack(self,other,AR_SUDDENENEMYINFERNO,1);
+        B_AI_Output(other,self,"DIA_Alvares_ATTACK_Witz_15_00");  //Вы, парни, сейчас исчезнете отсюда. Все понятно?
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Witz_11_01");  //Смотри-ка, новый герой нарисовался - и очень глупый герой.
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Witz_11_02");  //Ты знаешь, о чем я думаю?
+        B_AI_Output(other,self,"DIA_Alvares_ATTACK_Witz_15_03");  //Да кому какое дело, о чем ты думаешь?
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Witz_11_04");  //Я думаю, что хороший герой - это мертвый герой. Так что сделай мне одолжение - умри поскорее!
+        AI_StopProcessInfos(self);
+        b_attack(self,other,AR_SUDDENENEMYINFERNO,1);
 };
-
 func void dia_alvares_attack_kerle()
 {
-	AI_Output(other,self,"DIA_Alvares_ATTACK_Kerle_15_00");	//Кто вы такие, парни - пара клоунов?
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Kerle_11_01");	//Ты правильно понял. И я буду продолжать смеяться, когда твой труп будет лежать в дорожной пыли.
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Kerle_11_02");	//(зовет) Энгардо, давай начинать! Ты берешь на себя фермера - а я разберусь с этим клоуном!
-	AI_StopProcessInfos(self);
-	b_attack(self,other,AR_SUDDENENEMYINFERNO,1);
+        B_AI_Output(other,self,"DIA_Alvares_ATTACK_Kerle_15_00"); //Кто вы такие, парни - пара клоунов?
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Kerle_11_01"); //Ты правильно понял. И я буду продолжать смеяться, когда твой труп будет лежать в дорожной пыли.
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Kerle_11_02"); //(зовет) Энгардо, давай начинать! Ты берешь на себя фермера - а я разберусь с этим клоуном!
+        AI_StopProcessInfos(self);
+        b_attack(self,other,AR_SUDDENENEMYINFERNO,1);
 };
-
 func void dia_alvares_attack_aerger()
 {
-	AI_Output(other,self,"DIA_Alvares_ATTACK_Aerger_15_00");	//Мне не нужны проблемы.
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Aerger_11_01");	//А мы как раз ищем проблемы. Мы проделали долгий путь, чтобы найти их.
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Aerger_11_02");	//Да, мы собираемся создать целую кучу проблем. И начну я с тебя, если ты сейчас же не свалишь отсюда.
-	AI_StopProcessInfos(self);
+        B_AI_Output(other,self,"DIA_Alvares_ATTACK_Aerger_15_00");        //Мне не нужны проблемы.
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Aerger_11_01");        //А мы как раз ищем проблемы. Мы проделали долгий путь, чтобы найти их.
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Aerger_11_02");        //Да, мы собираемся создать целую кучу проблем. И начну я с тебя, если ты сейчас же не свалишь отсюда.
+        AI_StopProcessInfos(self);
 };
-
 func void dia_alvares_attack_lieferung()
 {
-	AI_Output(other,self,"DIA_Alvares_ATTACK_Lieferung_15_00");	//Я просто пришел сюда за товаром.
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Lieferung_11_01");	//И мы тоже. Но мы были здесь первыми. Так что проваливай, пока я не сделал тебе больно.
-	AI_StopProcessInfos(self);
+        B_AI_Output(other,self,"DIA_Alvares_ATTACK_Lieferung_15_00");     //Я просто пришел сюда за товаром.
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Lieferung_11_01");     //И мы тоже. Но мы были здесь первыми. Так что проваливай, пока я не сделал тебе больно.
+        AI_StopProcessInfos(self);
 };
-
 func void dia_alvares_attack_soeldner()
 {
-	AI_Output(other,self,"DIA_Alvares_ATTACK_Soeldner_15_00");	//Я хочу присоединиться к вам, наемникам.
-	AI_Output(self,other,"DIA_Alvares_ATTACK_Soeldner_11_01");	//Ох, правда? Тогда проваливай - или ты уже никогда не сможешь ни к кому присоединиться.
-	AI_StopProcessInfos(self);
+        B_AI_Output(other,self,"DIA_Alvares_ATTACK_Soeldner_15_00");      //Я хочу присоединиться к вам, наемникам.
+        B_AI_Output(self,other,"DIA_Alvares_ATTACK_Soeldner_11_01");      //Ох, правда? Тогда проваливай - или ты уже никогда не сможешь ни к кому присоединиться.
+        AI_StopProcessInfos(self);
 };
-
-
 instance DIA_ALVARES_SCHLUSS(C_INFO)
 {
-	npc = sld_840_alvares;
-	nr = 4;
-	condition = dia_alvares_schluss_condition;
-	information = dia_alvares_schluss_info;
-	permanent = FALSE;
-	important = TRUE;
+        npc = sld_840_alvares;
+        nr = 4;
+        condition = dia_alvares_schluss_condition;
+        information = dia_alvares_schluss_info;
+        permanent = FALSE;
+        important = TRUE;
 };
-
-
 func int dia_alvares_schluss_condition()
 {
-	if(Npc_IsInState(self,zs_talk) && Npc_KnowsInfo(other,dia_alvares_attack))
-	{
-		return TRUE;
-	};
+        if(Npc_IsInState(self,zs_talk) && Npc_KnowsInfo(other,dia_alvares_attack))
+        {
+                return TRUE;
+        };
 };
-
 func void dia_alvares_schluss_info()
 {
-	AI_Output(self,other,"DIA_Alvares_Schluss_11_00");	//Я дал тебе шанс. Но, похоже, ты не прислушиваешься к здравому смыслу.
-	AI_Output(self,other,"DIA_Alvares_Schluss_11_01");	//Хорошо - значит, мне придется убить тебя. (зовет) Энгардо, давай, прикончим их!
-	AI_StopProcessInfos(self);
-	b_attack(self,other,AR_SUDDENENEMYINFERNO,1);
+        B_AI_Output(self,other,"DIA_Alvares_Schluss_11_00");      //Я дал тебе шанс. Но, похоже, ты не прислушиваешься к здравому смыслу.
+        B_AI_Output(self,other,"DIA_Alvares_Schluss_11_01");      //Хорошо - значит, мне придется убить тебя. (зовет) Энгардо, давай, прикончим их!
+        AI_StopProcessInfos(self);
+        b_attack(self,other,AR_SUDDENENEMYINFERNO,1);
 };
-
-
 instance DIA_ALVARES_PICKPOCKET(C_INFO)
 {
-	npc = sld_840_alvares;
-	nr = 900;
-	condition = dia_alvares_pickpocket_condition;
-	information = dia_alvares_pickpocket_info;
-	permanent = TRUE;
-	description = PICKPOCKET_20;
+        npc = sld_840_alvares;
+        nr = 900;
+        condition = dia_alvares_pickpocket_condition;
+        information = dia_alvares_pickpocket_info;
+        permanent = TRUE;
+        description = PICKPOCKET_20;
 };
-
-
 func int dia_alvares_pickpocket_condition()
 {
-	return c_beklauen(20,15);
+        return c_beklauen(20,15);
 };
-
 func void dia_alvares_pickpocket_info()
 {
-	Info_ClearChoices(dia_alvares_pickpocket);
-	Info_AddChoice(dia_alvares_pickpocket,DIALOG_BACK,dia_alvares_pickpocket_back);
-	Info_AddChoice(dia_alvares_pickpocket,DIALOG_PICKPOCKET,dia_alvares_pickpocket_doit);
+        Info_ClearChoices(dia_alvares_pickpocket);
+        Info_AddChoice(dia_alvares_pickpocket,DIALOG_BACK,dia_alvares_pickpocket_back);
+        Info_AddChoice(dia_alvares_pickpocket,DIALOG_PICKPOCKET,dia_alvares_pickpocket_doit);
 };
-
 func void dia_alvares_pickpocket_doit()
 {
-	b_beklauen();
-	Info_ClearChoices(dia_alvares_pickpocket);
+        b_beklauen();
+        Info_ClearChoices(dia_alvares_pickpocket);
 };
-
 func void dia_alvares_pickpocket_back()
 {
-	Info_ClearChoices(dia_alvares_pickpocket);
+        Info_ClearChoices(dia_alvares_pickpocket);
 };
-
