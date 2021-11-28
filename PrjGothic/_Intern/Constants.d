@@ -1,8 +1,25 @@
-
+/*
 const string FONT_SCREEN = "FONT_OLD_20_WHITE.TGA";
 const string FONT_SCREENSMALL = "FONT_OLD_10_WHITE.TGA";
 const string FONT_BOOK = "FONT_10_BOOK.TGA";
 const string FONT_BOOKHEADLINE = "FONT_20_BOOK.TGA";
+
+const string TEXT_FONT_20 = "Font_old_20_white.tga";
+const string TEXT_FONT_10 = "Font_old_10_white.tga";
+const string TEXT_FONT_DEFAULT = "Font_old_10_white.tga";
+const string TEXT_FONT_INVENTORY = "Font_old_10_white.tga";
+*/
+
+var string FONT_SCREEN;
+var string FONT_SCREENSMALL;
+var string FONT_BOOK ;
+var string FONT_BOOKHEADLINE ;
+var string TEXT_FONT_20;
+var string TEXT_FONT_10;
+var string TEXT_FONT_DEFAULT;
+var string TEXT_FONT_INVENTORY;
+
+
 
 const int SPL_COST_SCROLL = 5;
 const int ATR_HITPOINTS = 0;
@@ -741,10 +758,7 @@ const int MAX_TROPHIES = 13;
 
 var int player_talent_takeanimaltrophy[MAX_TROPHIES];
 
-const string TEXT_FONT_20 = "Font_old_20_white.tga";
-const string TEXT_FONT_10 = "Font_old_10_white.tga";
-const string TEXT_FONT_DEFAULT = "Font_old_10_white.tga";
-const string TEXT_FONT_INVENTORY = "Font_old_10_white.tga";
+
 
 const float VIEW_TIME_PER_CHAR = 550;
 
