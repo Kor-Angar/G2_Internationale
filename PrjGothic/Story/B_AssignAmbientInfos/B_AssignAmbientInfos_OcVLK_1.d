@@ -40,8 +40,8 @@ func int dia_ocvlk_1_people_condition()
 
 func void dia_ocvlk_1_people_info()
 {
-	AI_Output(other,self,"DIA_OCVLK_1_PEOPLE_15_00");	//Кто командует здесь?
-	AI_Output(self,other,"DIA_OCVLK_1_PEOPLE_01_01");	//Командующий Гаронд. Но с тех пор, как ситуация ухудшилась, он не выходил из тронного зала. Боюсь, что это все плохо кончится.
+	B_AI_Output(other,self,"DIA_OCVLK_1_PEOPLE_15_00");	//Кто командует здесь?
+	B_AI_Output(self,other,"DIA_OCVLK_1_PEOPLE_01_01");	//Командующий Гаронд. Но с тех пор, как ситуация ухудшилась, он не выходил из тронного зала. Боюсь, что это все плохо кончится.
 };
 
 
@@ -65,9 +65,9 @@ func int dia_ocvlk_1_location_condition()
 
 func void dia_ocvlk_1_location_info()
 {
-	AI_Output(other,self,"DIA_OCVLK_1_LOCATION_15_00");	//Что тебе известно о Долине Рудников?
-	AI_Output(self,other,"DIA_OCVLK_1_LOCATION_01_01");	//Насколько я знаю, несколько наших парней находятся в шахтах и все еще добывают руду.
-	AI_Output(self,other,"DIA_OCVLK_1_LOCATION_01_02");	//Я бы не хотел поменяться с ними местами. Вся долина кишит орками. Не говоря уже о драконах.
+	B_AI_Output(other,self,"DIA_OCVLK_1_LOCATION_15_00");	//Что тебе известно о Долине Рудников?
+	B_AI_Output(self,other,"DIA_OCVLK_1_LOCATION_01_01");	//Насколько я знаю, несколько наших парней находятся в шахтах и все еще добывают руду.
+	B_AI_Output(self,other,"DIA_OCVLK_1_LOCATION_01_02");	//Я бы не хотел поменяться с ними местами. Вся долина кишит орками. Не говоря уже о драконах.
 };
 
 
@@ -88,31 +88,31 @@ func int dia_ocvlk_1_standard_condition()
 
 func void dia_ocvlk_1_standard_info()
 {
-	AI_Output(other,self,"DIA_OCVLK_1_STANDARD_15_00");	//Как дела?
+	B_AI_Output(other,self,"DIA_OCVLK_1_STANDARD_15_00");	//Как дела?
 	if(KAPITEL <= 3)
 	{
-		AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_01");	//Орки загнали нас в угол, как и хотели! Без подкрепления никому из нас не выжить! Я удивлен, что драконы все еще не прикончили нас.
+		B_AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_01");	//Орки загнали нас в угол, как и хотели! Без подкрепления никому из нас не выжить! Я удивлен, что драконы все еще не прикончили нас.
 	};
 	if(KAPITEL == 4)
 	{
 		if(MIS_KILLEDDRAGONS < 4)
 		{
-			AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_02");	//По крайней мере, скоро мы, наконец, получим подкрепление.
+			B_AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_02");	//По крайней мере, скоро мы, наконец, получим подкрепление.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_03");	//Я слышал, что драконы были уничтожены? Слава Инносу!
+			B_AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_03");	//Я слышал, что драконы были уничтожены? Слава Инносу!
 		};
 	};
 	if(KAPITEL >= 5)
 	{
 		if(MIS_OCGATEOPEN == FALSE)
 		{
-			AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_04");	//Все эта проклятая руда. Нам нужно было сбросить все наши запасы руды со стен крепости. Может быть, тогда орки оставили бы нас в покое.
+			B_AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_04");	//Все эта проклятая руда. Нам нужно было сбросить все наши запасы руды со стен крепости. Может быть, тогда орки оставили бы нас в покое.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_05");	//Эти идиотские ящики, что они второпях навалили перед входом, не смогут остановить орков!
+			B_AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_05");	//Эти идиотские ящики, что они второпях навалили перед входом, не смогут остановить орков!
 		};
 	};
 };

@@ -5,15 +5,15 @@ func void b_assignschiffswachenguard(var C_NPC schiffswache)
 	{
 		if(schiffswache.voice == 4)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_04_00");	//Мы следим за тобой. Помни об этом.
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_04_00");	//Мы следим за тобой. Помни об этом.
 		};
 		if(schiffswache.voice == 9)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_09_01");	//Не создавай здесь проблем, хорошо?
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_09_01");	//Не создавай здесь проблем, хорошо?
 		};
 		if(schiffswache.voice == 12)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_12_02");	//Даже не думай воровать здесь, понял?
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_12_02");	//Даже не думай воровать здесь, понял?
 		};
 		AI_StopProcessInfos(schiffswache);
 		Npc_SetRefuseTalk(schiffswache,60);
@@ -51,30 +51,30 @@ func void b_assignschiffswacheninfos(var C_NPC schiffswache)
 	{
 		if(schiffswache.voice == 4)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00");	//Эти проклятые орки штурмуют замок Гаронда. Мы должны действовать немедленно.
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00");	//Эти проклятые орки штурмуют замок Гаронда. Мы должны действовать немедленно.
 		};
 		if(schiffswache.voice == 9)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01");	//Если бы нам удалось найти этого предателя, что открыл главные ворота замка, мы бы ему показали!
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01");	//Если бы нам удалось найти этого предателя, что открыл главные ворота замка, мы бы ему показали!
 		};
 		if(schiffswache.voice == 12)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02");	//Мы не можем ждать дольше. Нашим парням в Долине Рудников нужна помощь, чтобы справиться со следующей волной орков.
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02");	//Мы не можем ждать дольше. Нашим парням в Долине Рудников нужна помощь, чтобы справиться со следующей волной орков.
 		};
 	}
 	else
 	{
 		if(schiffswache.voice == 4)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03");	//Гаронд объявил всеобщую мобилизацию. Мы скоро отправляемся в Долину Рудников.
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03");	//Гаронд объявил всеобщую мобилизацию. Мы скоро отправляемся в Долину Рудников.
 		};
 		if(schiffswache.voice == 9)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04");	//Оркам нужно преподнести урок.
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04");	//Оркам нужно преподнести урок.
 		};
 		if(schiffswache.voice == 12)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05");	//Я не могу дождаться, когда мы, наконец, покажем этим оркам. Ну ничего, скоро мы начнем теснить их.
+			B_AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05");	//Я не могу дождаться, когда мы, наконец, покажем этим оркам. Ну ничего, скоро мы начнем теснить их.
 		};
 	};
 	AI_StopProcessInfos(schiffswache);

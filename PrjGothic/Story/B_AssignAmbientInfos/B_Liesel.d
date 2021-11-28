@@ -39,7 +39,7 @@ func int dia_liesel_hallo_condition()
 
 func void dia_liesel_hallo_info()
 {
-	AI_Output(other,self,"DIA_Liesel_Hallo_15_00");	//Здравствуй... (прочищает горло) овечка.
+	B_AI_Output(other,self,"DIA_Liesel_Hallo_15_00");	//Здравствуй... (прочищает горло) овечка.
 	b_lieselmaeh();
 };
 
@@ -65,7 +65,7 @@ func int dia_liesel_kommmit_condition()
 
 func void dia_liesel_kommmit_info()
 {
-	AI_Output(other,self,"DIA_Liesel_KommMit_15_00");	//Пойдем со мной!
+	B_AI_Output(other,self,"DIA_Liesel_KommMit_15_00");	//Пойдем со мной!
 	b_lieselmaeh();
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	AI_StopProcessInfos(self);
@@ -93,7 +93,7 @@ func int dia_liesel_wartehier_condition()
 
 func void dia_liesel_wartehier_info()
 {
-	AI_Output(other,self,"DIA_Liesel_WarteHier_15_00");	//Подожди здесь!
+	B_AI_Output(other,self,"DIA_Liesel_WarteHier_15_00");	//Подожди здесь!
 	b_lieselmaeh();
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	AI_StopProcessInfos(self);

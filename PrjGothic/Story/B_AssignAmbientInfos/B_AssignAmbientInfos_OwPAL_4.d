@@ -44,15 +44,15 @@ func void dia_owpal_4_standard_info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_00");	//Иннос - моя честь, а моя честь - моя жизнь.
+		B_AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_00");	//Иннос - моя честь, а моя честь - моя жизнь.
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_01");	//Мы будем стоять здесь насмерть, пока Иннос дарует нам свой святой свет.
+		B_AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_01");	//Мы будем стоять здесь насмерть, пока Иннос дарует нам свой святой свет.
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_02");	//С помощью Инноса мы изгоним отсюда всех этих дьявольских созданий.
+		B_AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_02");	//С помощью Инноса мы изгоним отсюда всех этих дьявольских созданий.
 	};
 	AI_StopProcessInfos(self);
 };

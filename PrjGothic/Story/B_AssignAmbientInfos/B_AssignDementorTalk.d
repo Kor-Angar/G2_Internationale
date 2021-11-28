@@ -62,32 +62,32 @@ func void dia_ambientdementor_info()
 	randy = Hlp_Random(4);
 	if((Hlp_GetInstanceID(self) == Hlp_GetInstanceID(dmt_vino1)) || (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(dmt_vino2)) || (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(dmt_vino3)) || (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(dmt_vino4)))
 	{
-		AI_Output(self,other,"DIA_VinoDementor_19_00");	//Ты пришел расстроить наш ритуал? Его душа принадлежит нам. Тебе не спасти его, маг.
+		B_AI_Output(self,other,"DIA_VinoDementor_19_00");	//Ты пришел расстроить наш ритуал? Его душа принадлежит нам. Тебе не спасти его, маг.
 	}
 	else if(CURRENTLEVEL == DRAGONISLAND_ZEN)
 	{
 		if(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(dragonisle_keymaster))
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_01");	//(смеется) Ты пришел, чтобы бросить вызов мне и моей работе? Ты обречен на поражение.
-			AI_Output(self,other,"DIA_AmbientDementor_19_02");	//Никому еще не удавалось пройти мой склеп. Поворачивай назад. Тебе никогда не добраться до священных Чертогов Ирдората.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_01");	//(смеется) Ты пришел, чтобы бросить вызов мне и моей работе? Ты обречен на поражение.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_02");	//Никому еще не удавалось пройти мой склеп. Поворачивай назад. Тебе никогда не добраться до священных Чертогов Ирдората.
 		}
 		else
 		{
 			if(randy == 0)
 			{
-				AI_Output(self,other,"DIA_AmbientDementor_19_03");	//Ты уже зашел слишком далеко, презренный червь. Тебе никогда не добраться до внутреннего святилища.
+				B_AI_Output(self,other,"DIA_AmbientDementor_19_03");	//Ты уже зашел слишком далеко, презренный червь. Тебе никогда не добраться до внутреннего святилища.
 			};
 			if(randy == 1)
 			{
-				AI_Output(self,other,"DIA_AmbientDementor_19_04");	//Стой, где стоишь. Ни шагу дальше!
+				B_AI_Output(self,other,"DIA_AmbientDementor_19_04");	//Стой, где стоишь. Ни шагу дальше!
 			};
 			if(randy == 2)
 			{
-				AI_Output(self,other,"DIA_AmbientDementor_19_05");	//Да, тебе удалось добраться сюда, но мимо меня тебе не пройти.
+				B_AI_Output(self,other,"DIA_AmbientDementor_19_05");	//Да, тебе удалось добраться сюда, но мимо меня тебе не пройти.
 			};
 			if(randy == 3)
 			{
-				AI_Output(self,other,"DIA_AmbientDementor_19_06");	//Ты пришел, чтоб бросить вызов Хозяину, но сначала тебе придется пройти мимо меня.
+				B_AI_Output(self,other,"DIA_AmbientDementor_19_06");	//Ты пришел, чтоб бросить вызов Хозяину, но сначала тебе придется пройти мимо меня.
 			};
 		};
 	}
@@ -95,38 +95,38 @@ func void dia_ambientdementor_info()
 	{
 		if(randy == 0)
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_07");	//Жалкий маг, тебе никогда не сравниться с силой Хозяина.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_07");	//Жалкий маг, тебе никогда не сравниться с силой Хозяина.
 		};
 		if(randy == 1)
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_08");	//Ты выбрал путь магии, чтобы противостоять нам. Умный ход. Но даже это тебе не поможет.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_08");	//Ты выбрал путь магии, чтобы противостоять нам. Умный ход. Но даже это тебе не поможет.
 		};
 		if(randy == 2)
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_09");	//Даже будучи магом, тебе не остановить нас.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_09");	//Даже будучи магом, тебе не остановить нас.
 		};
 		if(randy == 3)
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_10");	//Мой Хозяин раздавит тебя. Твоя жалкая магия не спасет тебя.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_10");	//Мой Хозяин раздавит тебя. Твоя жалкая магия не спасет тебя.
 		};
 	}
 	else
 	{
 		if(randy == 0)
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_11");	//Сдайся на нашу милость, пока еще можешь. Тебе отсюда не уйти.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_11");	//Сдайся на нашу милость, пока еще можешь. Тебе отсюда не уйти.
 		};
 		if(randy == 1)
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_12");	//Теперь ты познаешь силу Хозяина. Тебе не уйти от него.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_12");	//Теперь ты познаешь силу Хозяина. Тебе не уйти от него.
 		};
 		if(randy == 2)
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_13");	//Хозяин хочет получить твою голову. Ничто не спасет тебя теперь.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_13");	//Хозяин хочет получить твою голову. Ничто не спасет тебя теперь.
 		};
 		if(randy == 3)
 		{
-			AI_Output(self,other,"DIA_AmbientDementor_19_14");	//Мы поймали тебя в ловушку, и теперь уничтожим тебя.
+			B_AI_Output(self,other,"DIA_AmbientDementor_19_14");	//Мы поймали тебя в ловушку, и теперь уничтожим тебя.
 		};
 	};
 };

@@ -40,7 +40,7 @@ func int dia_bdt_13_standard_condition()
 
 func void b_verschwinde_stimme13()
 {
-	AI_Output(self,other,"DIA_BDT_13_STANDARD_13_01");	//Проваливай!
+	B_AI_Output(self,other,"DIA_BDT_13_STANDARD_13_01");	//Проваливай!
 };
 
 func void dia_bdt_13_standard_info()
@@ -49,7 +49,7 @@ func void dia_bdt_13_standard_info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_BDT_13_STANDARD_13_00");	//Что уставился, как идиот?!
+		B_AI_Output(self,other,"DIA_BDT_13_STANDARD_13_00");	//Что уставился, как идиот?!
 	};
 	if(randy == 1)
 	{
@@ -57,7 +57,7 @@ func void dia_bdt_13_standard_info()
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_BDT_13_STANDARD_13_02");	//Оставь меня в покое, придурок.
+		B_AI_Output(self,other,"DIA_BDT_13_STANDARD_13_02");	//Оставь меня в покое, придурок.
 	};
 	AI_StopProcessInfos(self);
 };

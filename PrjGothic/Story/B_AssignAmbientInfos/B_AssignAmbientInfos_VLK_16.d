@@ -40,9 +40,9 @@ func int dia_vlk_16_join_condition()
 
 func void dia_vlk_16_join_info()
 {
-	AI_Output(other,self,"DIA_VLK_16_JOIN_15_00");	//Я хочу стать гражданином этого города!
-	AI_Output(self,other,"DIA_VLK_16_JOIN_16_01");	//Ты поможешь нам защититься от орков?
-	AI_Output(self,other,"DIA_VLK_16_JOIN_16_02");	//Если ты гражданин Хориниса, ты можешь поступить в ополчение - поговори с кем-нибудь из городской стражи.
+	B_AI_Output(other,self,"DIA_VLK_16_JOIN_15_00");	//Я хочу стать гражданином этого города!
+	B_AI_Output(self,other,"DIA_VLK_16_JOIN_16_01");	//Ты поможешь нам защититься от орков?
+	B_AI_Output(self,other,"DIA_VLK_16_JOIN_16_02");	//Если ты гражданин Хориниса, ты можешь поступить в ополчение - поговори с кем-нибудь из городской стражи.
 };
 
 
@@ -63,8 +63,8 @@ func int dia_vlk_16_people_condition()
 
 func void dia_vlk_16_people_info()
 {
-	AI_Output(other,self,"DIA_VLK_16_PEOPLE_15_00");	//Кто здесь самые влиятельные люди?
-	AI_Output(self,other,"DIA_VLK_16_PEOPLE_16_01");	//Паладины, которые живут в верхнем квартале.
+	B_AI_Output(other,self,"DIA_VLK_16_PEOPLE_15_00");	//Кто здесь самые влиятельные люди?
+	B_AI_Output(self,other,"DIA_VLK_16_PEOPLE_16_01");	//Паладины, которые живут в верхнем квартале.
 };
 
 
@@ -85,8 +85,8 @@ func int dia_vlk_16_location_condition()
 
 func void dia_vlk_16_location_info()
 {
-	AI_Output(other,self,"DIA_VLK_16_LOCATION_15_00");	//Что интересного можно найти здесь?
-	AI_Output(self,other,"DIA_VLK_16_LOCATION_16_01");	//На рынке ты можешь купить практически любые товары.
+	B_AI_Output(other,self,"DIA_VLK_16_LOCATION_15_00");	//Что интересного можно найти здесь?
+	B_AI_Output(self,other,"DIA_VLK_16_LOCATION_16_01");	//На рынке ты можешь купить практически любые товары.
 };
 
 
@@ -107,31 +107,31 @@ func int dia_vlk_16_standard_condition()
 
 func void dia_vlk_16_standard_info()
 {
-	AI_Output(other,self,"DIA_VLK_16_STANDARD_15_00");	//Что новенького?
+	B_AI_Output(other,self,"DIA_VLK_16_STANDARD_15_00");	//Что новенького?
 	if((KAPITEL == 1) || (KAPITEL == 2))
 	{
-		AI_Output(self,other,"DIA_VLK_16_STANDARD_16_01");	//Ты разве не слышал? Орки уже около города! Остается надеяться, что у паладинов достаточно людей.
-		AI_Output(self,other,"DIA_VLK_16_STANDARD_16_02");	//Интересно, почему фермеры больше не приходят на рынок?
+		B_AI_Output(self,other,"DIA_VLK_16_STANDARD_16_01");	//Ты разве не слышал? Орки уже около города! Остается надеяться, что у паладинов достаточно людей.
+		B_AI_Output(self,other,"DIA_VLK_16_STANDARD_16_02");	//Интересно, почему фермеры больше не приходят на рынок?
 	};
 	if(KAPITEL == 3)
 	{
 		if(MIS_RESCUEBENNET == LOG_SUCCESS)
 		{
-			AI_Output(self,other,"DIA_VLK_16_STANDARD_16_03");	//Наемник, который, как все думали, убил Лотара, оказался невиновным. Нашли доказательства, что его оклеветали. Я слышала об этом на рынке.
+			B_AI_Output(self,other,"DIA_VLK_16_STANDARD_16_03");	//Наемник, который, как все думали, убил Лотара, оказался невиновным. Нашли доказательства, что его оклеветали. Я слышала об этом на рынке.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_VLK_16_STANDARD_16_04");	//Это возмутительно. Наемники Онара убили уважаемого паладина Лотара прямо у всех на глазах.
-			AI_Output(self,other,"DIA_VLK_16_STANDARD_16_05");	//Но Иннос обязательно накажет их за их грехи. Никому не позволено поднимать руку на солдата нашего Владыки.
+			B_AI_Output(self,other,"DIA_VLK_16_STANDARD_16_04");	//Это возмутительно. Наемники Онара убили уважаемого паладина Лотара прямо у всех на глазах.
+			B_AI_Output(self,other,"DIA_VLK_16_STANDARD_16_05");	//Но Иннос обязательно накажет их за их грехи. Никому не позволено поднимать руку на солдата нашего Владыки.
 		};
 	};
 	if(KAPITEL == 4)
 	{
-		AI_Output(self,other,"DIA_VLK_16_STANDARD_16_06");	//Я слышала, что эти преступники бегут с фермы Онара. Говорят, они боятся возмездия паладинов лорда Хагена, и бегут от них назад, в Долину Рудников.
+		B_AI_Output(self,other,"DIA_VLK_16_STANDARD_16_06");	//Я слышала, что эти преступники бегут с фермы Онара. Говорят, они боятся возмездия паладинов лорда Хагена, и бегут от них назад, в Долину Рудников.
 	};
 	if(KAPITEL == 5)
 	{
-		AI_Output(self,other,"DIA_VLK_16_STANDARD_16_07");	//Я слышала, что паладинам удалось уничтожить всех этих ужасных драконов из Долины Рудников.
+		B_AI_Output(self,other,"DIA_VLK_16_STANDARD_16_07");	//Я слышала, что паладинам удалось уничтожить всех этих ужасных драконов из Долины Рудников.
 	};
 };
 

@@ -40,9 +40,9 @@ func int dia_bau_7_join_condition()
 
 func void dia_bau_7_join_info()
 {
-	AI_Output(other,self,"DIA_BAU_7_JOIN_15_00");	//Что ты знаешь о наемниках?
-	AI_Output(self,other,"DIA_BAU_7_JOIN_07_01");	//Онар нанял их для защиты своей фермы.
-	AI_Output(self,other,"DIA_BAU_7_JOIN_07_02");	//Большинство их них ведут себя так, как будто эта ферма принадлежит им. Но все же они защищают нас.
+	B_AI_Output(other,self,"DIA_BAU_7_JOIN_15_00");	//Что ты знаешь о наемниках?
+	B_AI_Output(self,other,"DIA_BAU_7_JOIN_07_01");	//Онар нанял их для защиты своей фермы.
+	B_AI_Output(self,other,"DIA_BAU_7_JOIN_07_02");	//Большинство их них ведут себя так, как будто эта ферма принадлежит им. Но все же они защищают нас.
 };
 
 
@@ -63,8 +63,8 @@ func int dia_bau_7_people_condition()
 
 func void dia_bau_7_people_info()
 {
-	AI_Output(other,self,"DIA_BAU_7_PEOPLE_15_00");	//Кто здесь главный?
-	AI_Output(self,other,"DIA_BAU_7_PEOPLE_07_01");	//Эта большая ферма принадлежит Онару. Мелкие фермы вокруг тоже. Но он сдает их в аренду.
+	B_AI_Output(other,self,"DIA_BAU_7_PEOPLE_15_00");	//Кто здесь главный?
+	B_AI_Output(self,other,"DIA_BAU_7_PEOPLE_07_01");	//Эта большая ферма принадлежит Онару. Мелкие фермы вокруг тоже. Но он сдает их в аренду.
 };
 
 
@@ -85,9 +85,9 @@ func int dia_bau_7_location_condition()
 
 func void dia_bau_7_location_info()
 {
-	AI_Output(other,self,"DIA_BAU_7_LOCATION_15_00");	//Расскажи мне подробнее здешних местах.
-	AI_Output(self,other,"DIA_BAU_7_LOCATION_07_01");	//Эта большая ферма на востоке долины принадлежит Онару. Ферма Секоба находится к северу.
-	AI_Output(self,other,"DIA_BAU_7_LOCATION_07_02");	//А ферма Бенгара - на высокогорье к юго-западу. Ты можешь попасть туда из долины. К ней ведет большая каменная лестница.
+	B_AI_Output(other,self,"DIA_BAU_7_LOCATION_15_00");	//Расскажи мне подробнее здешних местах.
+	B_AI_Output(self,other,"DIA_BAU_7_LOCATION_07_01");	//Эта большая ферма на востоке долины принадлежит Онару. Ферма Секоба находится к северу.
+	B_AI_Output(self,other,"DIA_BAU_7_LOCATION_07_02");	//А ферма Бенгара - на высокогорье к юго-западу. Ты можешь попасть туда из долины. К ней ведет большая каменная лестница.
 };
 
 
@@ -108,26 +108,26 @@ func int dia_bau_7_standard_condition()
 
 func void dia_bau_7_standard_info()
 {
-	AI_Output(other,self,"DIA_BAU_7_STANDARD_15_00");	//Что новенького?
+	B_AI_Output(other,self,"DIA_BAU_7_STANDARD_15_00");	//Что новенького?
 	if(KAPITEL == 1)
 	{
-		AI_Output(self,other,"DIA_BAU_7_STANDARD_07_01");	//Мы объявили независимость - мы больше не платим налоги городу. Король все равно ничего не делает для нас. С нас хватит!
+		B_AI_Output(self,other,"DIA_BAU_7_STANDARD_07_01");	//Мы объявили независимость - мы больше не платим налоги городу. Король все равно ничего не делает для нас. С нас хватит!
 	};
 	if(KAPITEL == 2)
 	{
-		AI_Output(self,other,"DIA_BAU_7_STANDARD_07_02");	//Сейчас мне нечего рассказать тебе.
+		B_AI_Output(self,other,"DIA_BAU_7_STANDARD_07_02");	//Сейчас мне нечего рассказать тебе.
 	};
 	if(KAPITEL == 3)
 	{
-		AI_Output(self,other,"DIA_BAU_7_STANDARD_07_03");	//Все только и говорят о драконах! Король всегда найдет способ выжать побольше денег из простых людей.
+		B_AI_Output(self,other,"DIA_BAU_7_STANDARD_07_03");	//Все только и говорят о драконах! Король всегда найдет способ выжать побольше денег из простых людей.
 	};
 	if(KAPITEL == 4)
 	{
-		AI_Output(self,other,"DIA_BAU_7_STANDARD_07_04");	//Будь осторожен: последнее время через проход толпами валят темные личности и различные дикие животные.
+		B_AI_Output(self,other,"DIA_BAU_7_STANDARD_07_04");	//Будь осторожен: последнее время через проход толпами валят темные личности и различные дикие животные.
 	};
 	if(KAPITEL >= 5)
 	{
-		AI_Output(self,other,"DIA_BAU_7_STANDARD_07_05");	//Теперь, когда драконы уничтожены, паладины снизошли до того, чтобы выползти из города. Опять они начнут тут командовать.
+		B_AI_Output(self,other,"DIA_BAU_7_STANDARD_07_05");	//Теперь, когда драконы уничтожены, паладины снизошли до того, чтобы выползти из города. Опять они начнут тут командовать.
 	};
 };
 

@@ -21,7 +21,7 @@ func void dia_dragon_ice_exit_info()
 {
 	Npc_RemoveInvItems(other,itmi_innoseye_mis,1);
 	CreateInvItems(other,itmi_innoseye_discharged_mis,1);
-	AI_Output(self,other,"DIA_Dragon_Ice_Exit_20_00");	//Сила Глаза угасла, и твое время вышло.
+	B_AI_Output(self,other,"DIA_Dragon_Ice_Exit_20_00");	//Сила Глаза угасла, и твое время вышло.
 	AI_StopProcessInfos(self);
 	DRAGONTALK_EXIT_FREE = FALSE;
 	self.flags = 0;
@@ -57,15 +57,15 @@ func int dia_dragon_ice_hello_condition()
 
 func void dia_dragon_ice_hello_info()
 {
-	AI_Output(self,other,"DIA_Dragon_Ice_Hello_20_00");	//Зачем ты потревожил мой сон? Мне что, закопаться еще глубже, чтобы вы, надоедливые мухи, наконец, оставили меня в покое?
+	B_AI_Output(self,other,"DIA_Dragon_Ice_Hello_20_00");	//Зачем ты потревожил мой сон? Мне что, закопаться еще глубже, чтобы вы, надоедливые мухи, наконец, оставили меня в покое?
 	if(MIS_KILLEDDRAGONS == 0)
 	{
-		AI_Output(other,self,"DIA_Dragon_Ice_Hello_15_01");	//Говорящий дракон. Спасибо Глазу Инноса.
+		B_AI_Output(other,self,"DIA_Dragon_Ice_Hello_15_01");	//Говорящий дракон. Спасибо Глазу Инноса.
 	};
-	AI_Output(self,other,"DIA_Dragon_Ice_Hello_20_02");	//Вы, люди, забавные существа. Даже если вас всех сдуют ледяные ветра смерти, всегда найдется хотя бы один, кто поднимется из пепла, думая, что ему судьбой предназначено стать героем.
-	AI_Output(self,other,"DIA_Dragon_Ice_Hello_20_03");	//Но скоро все будет кончено. Я лично позабочусь, чтобы никто из вас больше не поднялся.
-	AI_Output(other,self,"DIA_Dragon_Ice_Hello_15_04");	//Молчать! Силой священного Глаза, что дарована мне свыше, я приказываю тебе отвечать на мои вопросы.
-	AI_Output(self,other,"DIA_Dragon_Ice_Hello_20_05");	//Ха-ха-ха. Тогда спрашивай. Но твои знания не помогут тебе.
+	B_AI_Output(self,other,"DIA_Dragon_Ice_Hello_20_02");	//Вы, люди, забавные существа. Даже если вас всех сдуют ледяные ветра смерти, всегда найдется хотя бы один, кто поднимется из пепла, думая, что ему судьбой предназначено стать героем.
+	B_AI_Output(self,other,"DIA_Dragon_Ice_Hello_20_03");	//Но скоро все будет кончено. Я лично позабочусь, чтобы никто из вас больше не поднялся.
+	B_AI_Output(other,self,"DIA_Dragon_Ice_Hello_15_04");	//Молчать! Силой священного Глаза, что дарована мне свыше, я приказываю тебе отвечать на мои вопросы.
+	B_AI_Output(self,other,"DIA_Dragon_Ice_Hello_20_05");	//Ха-ха-ха. Тогда спрашивай. Но твои знания не помогут тебе.
 };
 
 
@@ -88,8 +88,8 @@ func int dia_dragon_ice_werbistdu_condition()
 
 func void dia_dragon_ice_werbistdu_info()
 {
-	AI_Output(other,self,"DIA_Dragon_Ice_WERBISTDU_15_00");	//Кто ты?
-	AI_Output(self,other,"DIA_Dragon_Ice_WERBISTDU_20_01");	//Я Финкрег. Повелитель льда и снега, Страж Конгресса и твоя неминуемая смерть.
+	B_AI_Output(other,self,"DIA_Dragon_Ice_WERBISTDU_15_00");	//Кто ты?
+	B_AI_Output(self,other,"DIA_Dragon_Ice_WERBISTDU_20_01");	//Я Финкрег. Повелитель льда и снега, Страж Конгресса и твоя неминуемая смерть.
 };
 
 
@@ -112,11 +112,11 @@ func int dia_dragon_ice_beliar_condition()
 
 func void dia_dragon_ice_beliar_info()
 {
-	AI_Output(other,self,"DIA_Dragon_Ice_BELIAR_15_00");	//Какому богу ты служишь?
-	AI_Output(other,self,"DIA_Dragon_Ice_BELIAR_15_01");	//Какой проклятый бог мог позволить таким презренным созданиям, как ты, ходить по этой земле?
-	AI_Output(self,other,"DIA_Dragon_Ice_BELIAR_20_02");	//Не пытайся понять смысл нашего появления здесь, жалкий герой.
-	AI_Output(self,other,"DIA_Dragon_Ice_BELIAR_20_03");	//Белиар не только позволил нам появиться здесь - он приказал это.
-	AI_Output(self,other,"DIA_Dragon_Ice_BELIAR_20_04");	//Воодушевленные его святыми словами, мы не знаем отдыха, пока его воля не воплотится в жизнь.
+	B_AI_Output(other,self,"DIA_Dragon_Ice_BELIAR_15_00");	//Какому богу ты служишь?
+	B_AI_Output(other,self,"DIA_Dragon_Ice_BELIAR_15_01");	//Какой проклятый бог мог позволить таким презренным созданиям, как ты, ходить по этой земле?
+	B_AI_Output(self,other,"DIA_Dragon_Ice_BELIAR_20_02");	//Не пытайся понять смысл нашего появления здесь, жалкий герой.
+	B_AI_Output(self,other,"DIA_Dragon_Ice_BELIAR_20_03");	//Белиар не только позволил нам появиться здесь - он приказал это.
+	B_AI_Output(self,other,"DIA_Dragon_Ice_BELIAR_20_04");	//Воодушевленные его святыми словами, мы не знаем отдыха, пока его воля не воплотится в жизнь.
 };
 
 func void b_assigndragontalk_ice(var C_NPC slf)

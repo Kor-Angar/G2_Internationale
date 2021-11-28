@@ -21,7 +21,7 @@ func void dia_dragon_fire_exit_info()
 {
 	Npc_RemoveInvItems(other,itmi_innoseye_mis,1);
 	CreateInvItems(other,itmi_innoseye_discharged_mis,1);
-	AI_Output(self,other,"DIA_Dragon_Fire_Exit_20_00");	//Глаз потерял свою силу, и тебе не дожить до следующей зари.
+	B_AI_Output(self,other,"DIA_Dragon_Fire_Exit_20_00");	//Глаз потерял свою силу, и тебе не дожить до следующей зари.
 	AI_StopProcessInfos(self);
 	DRAGONTALK_EXIT_FREE = FALSE;
 	self.flags = 0;
@@ -53,16 +53,16 @@ func int dia_dragon_fire_hello_condition()
 
 func void dia_dragon_fire_hello_info()
 {
-	AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_00");	//Поверить не могу, что еще находятся люди, готовые отдать свою жизнь за то, чтобы просто увидеть живого дракона.
+	B_AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_00");	//Поверить не могу, что еще находятся люди, готовые отдать свою жизнь за то, чтобы просто увидеть живого дракона.
 	if(MIS_KILLEDDRAGONS == 0)
 	{
-		AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_01");	//Ты довольно чисто говоришь для такого громоздкого монстра.
+		B_AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_01");	//Ты довольно чисто говоришь для такого громоздкого монстра.
 	};
-	AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_02");	//Я пришел не затем, чтобы увидеть тебя. Боюсь, цели мои несколько более радикальны.
-	AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_03");	//Ты хочешь сказать, что готов вызвать меня на бой?
-	AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_04");	//Ха-ха-ха. Я сломаю твою хлипкую шею.
-	AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_05");	//Не так быстро, дружок. Со мной Глаз Инноса. Ты не можешь сопротивляться моей воле. Отвечай на мои вопросы, иначе тебя ждет невыносимая агония.
-	AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_06");	//(ревет) Ах-х. Тогда задавай свои глупые вопросы, пока еще можешь. Твоя сила долго не продлится.
+	B_AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_02");	//Я пришел не затем, чтобы увидеть тебя. Боюсь, цели мои несколько более радикальны.
+	B_AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_03");	//Ты хочешь сказать, что готов вызвать меня на бой?
+	B_AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_04");	//Ха-ха-ха. Я сломаю твою хлипкую шею.
+	B_AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_05");	//Не так быстро, дружок. Со мной Глаз Инноса. Ты не можешь сопротивляться моей воле. Отвечай на мои вопросы, иначе тебя ждет невыносимая агония.
+	B_AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_06");	//(ревет) Ах-х. Тогда задавай свои глупые вопросы, пока еще можешь. Твоя сила долго не продлится.
 };
 
 
@@ -85,9 +85,9 @@ func int dia_dragon_fire_werbistdu_condition()
 
 func void dia_dragon_fire_werbistdu_info()
 {
-	AI_Output(other,self,"DIA_Dragon_Fire_WerBistDu_15_00");	//Кто ты?
-	AI_Output(self,other,"DIA_Dragon_Fire_WerBistDu_20_01");	//Меня зовут Феоматар, и это все, что ты узнаешь обо мне.
-	AI_Output(self,other,"DIA_Dragon_Fire_WerBistDu_20_02");	//Когда меня отпустят чары Глаза, ты сгоришь в огне.
+	B_AI_Output(other,self,"DIA_Dragon_Fire_WerBistDu_15_00");	//Кто ты?
+	B_AI_Output(self,other,"DIA_Dragon_Fire_WerBistDu_20_01");	//Меня зовут Феоматар, и это все, что ты узнаешь обо мне.
+	B_AI_Output(self,other,"DIA_Dragon_Fire_WerBistDu_20_02");	//Когда меня отпустят чары Глаза, ты сгоришь в огне.
 };
 
 
@@ -110,9 +110,9 @@ func int dia_dragon_fire_hort_condition()
 
 func void dia_dragon_fire_hort_info()
 {
-	AI_Output(other,self,"DIA_Dragon_Fire_HORT_15_00");	//У каждого дракона есть сокровищница, где он хранит свои сокровища. А где твоя сокровищница?
-	AI_Output(self,other,"DIA_Dragon_Fire_HORT_20_01");	//В месте, которое будет недоступно для тебя, когда я освобожусь от уз Глаза.
-	AI_Output(self,other,"DIA_Dragon_Fire_HORT_20_02");	//Я храню свои сокровища высоко в этих горячих утесах, куда практически невозможно добраться такому бескрылому созданию вроде тебя.
+	B_AI_Output(other,self,"DIA_Dragon_Fire_HORT_15_00");	//У каждого дракона есть сокровищница, где он хранит свои сокровища. А где твоя сокровищница?
+	B_AI_Output(self,other,"DIA_Dragon_Fire_HORT_20_01");	//В месте, которое будет недоступно для тебя, когда я освобожусь от уз Глаза.
+	B_AI_Output(self,other,"DIA_Dragon_Fire_HORT_20_02");	//Я храню свои сокровища высоко в этих горячих утесах, куда практически невозможно добраться такому бескрылому созданию вроде тебя.
 };
 
 func void b_assigndragontalk_fire(var C_NPC slf)

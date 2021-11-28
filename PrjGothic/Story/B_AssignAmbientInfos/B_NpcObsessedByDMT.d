@@ -1,51 +1,72 @@
+// ***************************************************
+//  	B_NpcObsessedByDMT	(Kurzzeitige Bessenheit eines NSCs durch einen Dementor)	
+// ***************************************************
 
-var int npcobsessedbydmt;
-var int npcobsessedbydmt_brutus;
-var int npcobsessedbydmt_engrom;
-var int npcobsessedbydmt_vino;
-var int npcobsessedbydmt_malak;
-var int npcobsessedbydmt_fernando;
-var int npcobsessedbydmt_bromor;
-var int npcobsessedbydmt_sekob;
-var int npcobsessedbydmt_randolph;
+var int NpcObsessedByDMT;
 
-func void b_dmtwurm()
+////////////////////////
+// Alle Besessenen NPCs
+////////////////////////
+
+//Alle
+var int NpcObsessedByDMT_Brutus;	//Joly: hat sein Buch Anfang 5. Kapitel
+
+//Nur KDF
+var int NpcObsessedByDMT_Agon;		//Joly: hat sein Buch Anfang 3. Kapitel
+var int NpcObsessedByDMT_Vino;		//Joly: hat sein Buch Anfang 3. Kapitel
+var int NpcObsessedByDMT_Malak;		//Joly: hat sein Buch Anfang 3. Kapitel
+var int NpcObsessedByDMT_Fernando;	//Joly: hat sein Buch Anfang 3. Kapitel
+var int NpcObsessedByDMT_Bromor;	//Joly: hat sein Buch Anfang 3. Kapitel
+var int NpcObsessedByDMT_Engrom;	//Joly: hat sein Buch Anfang 4. Kapitel
+var int NpcObsessedByDMT_Randolph;	//Joly: hat sein Buch Anfang 4. Kapitel
+var int NpcObsessedByDMT_Sekob;		//Joly: hat sein Buch Anfang 5. Kapitel
+
+func void B_DMTWurm ()
 {
-	AI_Output(self,other,"DIA_NoName_ObsessedByDMT_19_00");	//Мы видим тебя, червь. Тебе не скрыться от нас.
+	//B_AI_Output	(self,	other,	"DIA_NoName_ObsessedByDMT_19_00");	//Wir sehen dich, du Wurm. Du kannst uns nicht entkommen.
+	B_AI_Output	(self,	other,	"DIA_NoName_ObsessedByDMT_19_00");	//Мы видим тебя, червь. Тебе не скрыться от нас.
 };
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// B_NpcClearObsessionByDMT	steht bei allen NSCs statt der AI_StopProcessInfos (self);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-func void b_npcclearobsessionbydmt(var C_NPC medium)
-{
-	AI_StopProcessInfos(medium);
-	if(NPCOBSESSEDBYDMT == TRUE)
-	{
-		Npc_RemoveInvItems(medium,itar_dementor,1);
-		AI_EquipBestArmor(medium);
-		NPCOBSESSEDBYDMT = FALSE;
-		medium.flags = 0;
-		b_attack(medium,other,AR_NONE,1);
-		Wld_StopEffect("DEMENTOR_FX");
-		Snd_Play("MFX_FEAR_CAST");
-		b_scisobsessed(medium);
-		if(Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(malak))
+func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT muЯ in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
+{														
+	AI_StopProcessInfos	(medium);
+
+	if (NpcObsessedByDMT == TRUE)
 		{
-			Npc_SetTarget(bau_962_bauer,other);
-			AI_StartState(bau_962_bauer,zs_flee,0,"");
-			Npc_SetTarget(bau_964_bauer,other);
-			AI_StartState(bau_964_bauer,zs_flee,0,"");
-			Npc_SetTarget(bau_965_bauer,other);
-			AI_StartState(bau_965_bauer,zs_flee,0,"");
-			Npc_SetTarget(bau_966_bauer,other);
-			AI_StartState(bau_966_bauer,zs_flee,0,"");
-			Npc_SetTarget(bau_967_bauer,other);
-			AI_StartState(bau_967_bauer,zs_flee,0,"");
-			Npc_SetTarget(bau_968_bauer,other);
-			AI_StartState(bau_968_bauer,zs_flee,0,"");
-			Npc_SetTarget(bau_969_bauer,other);
-			AI_StartState(bau_969_bauer,zs_flee,0,"");
+			Npc_RemoveInvItems	(medium, ITAR_Dementor,	1);
+			AI_EquipBestArmor (medium);
+			NpcObsessedByDMT = FALSE;
+			medium.flags = 0;
+			B_Attack (medium, other, AR_NONE, 1);
+		 	Wld_StopEffect("DEMENTOR_FX");
+		 	Snd_Play 	("MFX_FEAR_CAST" );
+			B_SCIsObsessed (medium);
+
+
+
+		/////////////////////////////////
+		// Story SituationsKonsequenzen
+		/////////////////////////////////
+				
+			if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Malak))
+				{	
+					Npc_SetTarget 		(BAU_962_Bauer, other);	AI_StartState 		(BAU_962_Bauer, ZS_Flee, 0, "");
+					Npc_SetTarget 		(BAU_964_Bauer, other);	AI_StartState 		(BAU_964_Bauer, ZS_Flee, 0, "");
+					Npc_SetTarget 		(BAU_965_Bauer, other);	AI_StartState 		(BAU_965_Bauer, ZS_Flee, 0, "");
+					Npc_SetTarget 		(BAU_966_Bauer, other);	AI_StartState 		(BAU_966_Bauer, ZS_Flee, 0, "");
+					Npc_SetTarget 		(BAU_967_Bauer, other);	AI_StartState 		(BAU_967_Bauer, ZS_Flee, 0, "");
+					Npc_SetTarget 		(BAU_968_Bauer, other);	AI_StartState 		(BAU_968_Bauer, ZS_Flee, 0, "");
+					Npc_SetTarget 		(BAU_969_Bauer, other);	AI_StartState 		(BAU_969_Bauer, ZS_Flee, 0, "");
+				};		
 		};
-	};
 };
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// B_NpcObsessedByDMT
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 func void b_npcobsessedbydmt(var C_NPC medium)
 {
@@ -66,7 +87,7 @@ func void b_npcobsessedbydmt(var C_NPC medium)
 		{
 			if(MIS_OCGATEOPEN == TRUE)
 			{
-				AI_Output(self,other,"DIA_Brutus_ObsessedByDMT_19_00");	//Открыв ворота, ты оказал большую услугу нашему Хозяину, жалкий смертный. Мы возведем часовню в его честь на твоей могиле.
+				B_AI_Output(self,other,"DIA_Brutus_ObsessedByDMT_19_00");	//Открыв ворота, ты оказал большую услугу нашему Хозяину, жалкий смертный. Мы возведем часовню в его честь на твоей могиле.
 			}
 			else
 			{
@@ -76,29 +97,36 @@ func void b_npcobsessedbydmt(var C_NPC medium)
 		}
 		else if(Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(engrom))
 		{
-			AI_Output(self,other,"DIA_Engrom_ObsessedByDMT_19_00");	//Поворачивай назад. Пока еще не слишком поздно.
+			B_AI_Output(self,other,"DIA_Engrom_ObsessedByDMT_19_00");	//Поворачивай назад. Пока еще не слишком поздно.
 			NPCOBSESSEDBYDMT_ENGROM = TRUE;
 		}
 		else if(Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(vino))
 		{
-			AI_Output(self,other,"DIA_Vino_ObsessedByDMT_19_00");	//Скоро мы будем управлять всем. Ты и твоя жалкая магия не представляют опасности для нас.
+			B_AI_Output(self,other,"DIA_Vino_ObsessedByDMT_19_00");	//Скоро мы будем управлять всем. Ты и твоя жалкая магия не представляют опасности для нас.
 			NPCOBSESSEDBYDMT_VINO = TRUE;
 		}
 		else if(Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(malak))
 		{
-			AI_Output(self,other,"DIA_Malak_ObsessedByDMT_19_00");	//Тебе не спасти эту душу, маг. Он никогда не станет прежним.
+			B_AI_Output(self,other,"DIA_Malak_ObsessedByDMT_19_00");	//Тебе не спасти эту душу, маг. Он никогда не станет прежним.
 			NPCOBSESSEDBYDMT_MALAK = TRUE;
 		}
 		else if(Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(sekob))
 		{
-			AI_Output(self,other,"DIA_Sekob_ObsessedByDMT_19_00");	//Брось, маг. Тебе не суждено победить.
+			B_AI_Output(self,other,"DIA_Sekob_ObsessedByDMT_19_00");	//Брось, маг. Тебе не суждено победить.
 			NPCOBSESSEDBYDMT_SEKOB = TRUE;
 		}
 		else if(Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(randolph))
 		{
-			AI_Output(self,other,"DIA_Randolph_ObsessedByDMT_19_00");	//Не трать свои усилия на этого слабака. Мы поработим их всех.
+			B_AI_Output(self,other,"DIA_Randolph_ObsessedByDMT_19_00");	//Не трать свои усилия на этого слабака. Мы поработим их всех.
 			NPCOBSESSEDBYDMT_RANDOLPH = TRUE;
 		}
+		/*
+		else if(Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(VLK_603_AGON))
+		{
+			B_AI_Output(self,other,"DIA_Vino_ObsessedByDMT_19_00");	//Скоро мы будем управлять всем. Ты и твоя жалкая магия не представляют опасности для нас.
+			NpcObsessedByDMT_Agon = TRUE;
+		}
+		*/
 		else
 		{
 			b_dmtwurm();
@@ -117,5 +145,8 @@ func void b_npcobsessedbydmt(var C_NPC medium)
 	{
 		b_npcclearobsessionbydmt(medium);
 	};
+	
+	AI_StartState	(self, dia_vino_kap3_exit_info,1,"");
+	
 };
 

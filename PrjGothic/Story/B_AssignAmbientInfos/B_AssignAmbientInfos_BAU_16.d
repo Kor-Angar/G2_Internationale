@@ -40,8 +40,8 @@ func int dia_bau_16_join_condition()
 
 func void dia_bau_16_join_info()
 {
-	AI_Output(other,self,"DIA_BAU_16_JOIN_15_00");	//Расскажи мне подробнее об этих наемниках!
-	AI_Output(self,other,"DIA_BAU_16_JOIN_16_01");	//Они слоняются без дела по ферме, дерутся иногда и думают, что это забавно.
+	B_AI_Output(other,self,"DIA_BAU_16_JOIN_15_00");	//Расскажи мне подробнее об этих наемниках!
+	B_AI_Output(self,other,"DIA_BAU_16_JOIN_16_01");	//Они слоняются без дела по ферме, дерутся иногда и думают, что это забавно.
 };
 
 
@@ -62,9 +62,9 @@ func int dia_bau_16_people_condition()
 
 func void dia_bau_16_people_info()
 {
-	AI_Output(other,self,"DIA_BAU_16_PEOPLE_15_00");	//Кто заправляет здесь?
-	AI_Output(self,other,"DIA_BAU_16_PEOPLE_16_01");	//Наемники, конечно.
-	AI_Output(self,other,"DIA_BAU_16_PEOPLE_16_02");	//Онар платит им, но большую часть времени они делают, что им захочется.
+	B_AI_Output(other,self,"DIA_BAU_16_PEOPLE_15_00");	//Кто заправляет здесь?
+	B_AI_Output(self,other,"DIA_BAU_16_PEOPLE_16_01");	//Наемники, конечно.
+	B_AI_Output(self,other,"DIA_BAU_16_PEOPLE_16_02");	//Онар платит им, но большую часть времени они делают, что им захочется.
 };
 
 
@@ -85,9 +85,9 @@ func int dia_bau_16_location_condition()
 
 func void dia_bau_16_location_info()
 {
-	AI_Output(other,self,"DIA_BAU_16_LOCATION_15_00");	//Что ты можешь рассказать интересного об этой местности?
-	AI_Output(self,other,"DIA_BAU_16_LOCATION_16_01");	//Здесь есть три фермы. Ферма Онара на востоке, а Секоба на севере долины.
-	AI_Output(self,other,"DIA_BAU_16_LOCATION_16_02");	//Отсюда в горы на юго-западе, ведет каменная лестница. Там находится ферма Бенгара.
+	B_AI_Output(other,self,"DIA_BAU_16_LOCATION_15_00");	//Что ты можешь рассказать интересного об этой местности?
+	B_AI_Output(self,other,"DIA_BAU_16_LOCATION_16_01");	//Здесь есть три фермы. Ферма Онара на востоке, а Секоба на севере долины.
+	B_AI_Output(self,other,"DIA_BAU_16_LOCATION_16_02");	//Отсюда в горы на юго-западе, ведет каменная лестница. Там находится ферма Бенгара.
 };
 
 
@@ -108,26 +108,26 @@ func int dia_bau_16_standard_condition()
 
 func void dia_bau_16_standard_info()
 {
-	AI_Output(other,self,"DIA_BAU_16_STANDARD_15_00");	//Что новенького?
+	B_AI_Output(other,self,"DIA_BAU_16_STANDARD_15_00");	//Что новенького?
 	if(KAPITEL == 1)
 	{
-		AI_Output(self,other,"DIA_BAU_16_STANDARD_16_01");	//Солдаты из города больше не забирают наш скот и урожай! Мы больше не играем в эти игры. Теперь мы способны защитить себя!
+		B_AI_Output(self,other,"DIA_BAU_16_STANDARD_16_01");	//Солдаты из города больше не забирают наш скот и урожай! Мы больше не играем в эти игры. Теперь мы способны защитить себя!
 	};
 	if(KAPITEL == 2)
 	{
-		AI_Output(self,other,"DIA_BAU_16_STANDARD_16_02");	//Говорят, что в Долине Рудников собирается армия зла. Скоро они будут здесь.
+		B_AI_Output(self,other,"DIA_BAU_16_STANDARD_16_02");	//Говорят, что в Долине Рудников собирается армия зла. Скоро они будут здесь.
 	};
 	if(KAPITEL == 3)
 	{
-		AI_Output(self,other,"DIA_BAU_16_STANDARD_16_03");	//Я слышала, что в Долине Рудников появились драконы. Но мне не очень-то верится в это.
+		B_AI_Output(self,other,"DIA_BAU_16_STANDARD_16_03");	//Я слышала, что в Долине Рудников появились драконы. Но мне не очень-то верится в это.
 	};
 	if(KAPITEL == 4)
 	{
-		AI_Output(self,other,"DIA_BAU_16_STANDARD_16_04");	//Кое-кто из наемников ушел отсюда. Я даже не знаю, хорошо это или плохо.
+		B_AI_Output(self,other,"DIA_BAU_16_STANDARD_16_04");	//Кое-кто из наемников ушел отсюда. Я даже не знаю, хорошо это или плохо.
 	};
 	if(KAPITEL >= 5)
 	{
-		AI_Output(self,other,"DIA_BAU_16_STANDARD_16_05");	//Паладины отправились в Долину Рудников - интересно, зачем?
+		B_AI_Output(self,other,"DIA_BAU_16_STANDARD_16_05");	//Паладины отправились в Долину Рудников - интересно, зачем?
 	};
 };
 
