@@ -14,7 +14,7 @@ func void B_AI_Output(var C_NPC other_self_1,var C_NPC other_self_2,var string D
 	{
 		DIA_NPC_Description_ID = ConcatStrings("De_",DIA_NPC_Description_ID);
 	};
-
+	
     AI_Output(other_self_1,other_self_2,DIA_NPC_Description_ID);
 //	PrintScreen(concattext,50,53,FONT_ScreenSmall,3);
 //	Snd_Play("DEM_Die");
