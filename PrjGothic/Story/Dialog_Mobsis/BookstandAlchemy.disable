@@ -1,8 +1,3 @@
-
-var int alchemy_1_permanent;
-var int alchemy_2_permanent;
-var int alchemy_3_permanent;
-
 func void use_bookstandalchemy1_s1()
 {
 	var C_NPC her;

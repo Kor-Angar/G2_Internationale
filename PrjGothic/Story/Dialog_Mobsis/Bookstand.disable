@@ -38,9 +38,6 @@ func void use_bookstand_01_s1()
 	};
 };
 
-
-var int finaldragonequipment_once;
-
 func void use_finaldragonequipment_s1()
 {
 	var C_NPC her;
