@@ -413,30 +413,7 @@ TXT_INV_CAT[9] =
 	"Разное"
 };
 */
-/*
-	TXT_TALENTS_SKILLS[1] ="";
-	TXT_TALENTS_SKILLS[2] ="Новичок|Боец|Мастер";
-	TXT_TALENTS_SKILLS[3] ="Новичок|Боец|Мастер";
-	TXT_TALENTS_SKILLS[4] ="Новичок|Стрелок|Мастер";
-	TXT_TALENTS_SKILLS[5] ="Новичок|Стрелок|Мастер";
-	TXT_TALENTS_SKILLS[6] ="Не изучено|Изучено";
-	TXT_TALENTS_SKILLS[7] ="";
-	TXT_TALENTS_SKILLS[8] ="Не изучено|Круг 1|Круг 2|Круг 3|Круг 4|Круг 5|Круг 6";
-	TXT_TALENTS_SKILLS[9] ="Не изучено|Изучено";
-	TXT_TALENTS_SKILLS[10] ="";
-	TXT_TALENTS_SKILLS[11] ="";
-	TXT_TALENTS_SKILLS[12] ="Не изучено|Изучено";
-	TXT_TALENTS_SKILLS[13] ="Не изучено|Изучено";
-	TXT_TALENTS_SKILLS[14] ="Не изучено|Изучено";
-	TXT_TALENTS_SKILLS[15] ="Не изучено|Изучено";
-	TXT_TALENTS_SKILLS[16] ="Не изучено|Изучено";
-	TXT_TALENTS_SKILLS[17] ="Не изучено|Изучено";
-	TXT_TALENTS_SKILLS[18] ="";
-	TXT_TALENTS_SKILLS[19] ="";
-	TXT_TALENTS_SKILLS[20] ="";
-	TXT_TALENTS_SKILLS[21] ="";
-	TXT_TALENTS_SKILLS[22] ="";
-*/
+
 /*
 const	string TXT_TALENTS_SKILLS[22] =
 {
@@ -491,6 +468,28 @@ const	string TXT_TALENTS_SKILLS[22] =
 	""
 };
 */
+TXT_TALENTS_SKILLS[1] ="";	
+TXT_TALENTS_SKILLS[2] =	"Новичок|Боец|Мастер";
+TXT_TALENTS_SKILLS[3] ="33";
+TXT_TALENTS_SKILLS[4] ="";
+TXT_TALENTS_SKILLS[5] ="44";
+TXT_TALENTS_SKILLS[6] ="";
+TXT_TALENTS_SKILLS[7] ="";
+TXT_TALENTS_SKILLS[8] ="";
+TXT_TALENTS_SKILLS[9] ="";
+TXT_TALENTS_SKILLS[10] ="";
+TXT_TALENTS_SKILLS[11] ="";
+TXT_TALENTS_SKILLS[12] ="";
+TXT_TALENTS_SKILLS[13] ="";
+TXT_TALENTS_SKILLS[14] ="";
+TXT_TALENTS_SKILLS[15] ="";
+TXT_TALENTS_SKILLS[16] ="";
+TXT_TALENTS_SKILLS[17] ="";
+TXT_TALENTS_SKILLS[18] ="";
+TXT_TALENTS_SKILLS[19] ="";
+TXT_TALENTS_SKILLS[20] ="";
+TXT_TALENTS_SKILLS[21] ="";
+
 
 NAME_PALADIN = "Паладин";
 NAME_MILIZ = "Ополченец";

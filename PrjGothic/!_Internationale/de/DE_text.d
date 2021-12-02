@@ -3,7 +3,7 @@ func void DE_text()
 MOBNAME_CRATE = "Kiste";
 MOBNAME_CHEST = "Truhe";
 MOBNAME_BED = "Bett";
-MOBNAME_DOOR = "TÑŒr";
+MOBNAME_DOOR = "Tür";
 MOBNAME_CAMPFIRE = "";
 MOBNAME_TORCH = "";
 MOBNAME_TORCHHOLDER = "";
@@ -16,7 +16,7 @@ MOBNAME_FORGE = "Schmiede-Feuer";
 MOBNAME_GRINDSTONE = "Schleifstein";
 MOBNAME_WHEEL = "Winde";
 MOBNAME_LAB = "Alchemietisch";
-MOBNAME_BOOKSTAND = "BuchstÐ´nder";
+MOBNAME_BOOKSTAND = "Buchständer";
 MOBNAME_BOOKSBOARD = "Buchkommode";
 MOBNAME_CHAIR = "";
 MOBNAME_CAULDRON = "Kessel";
@@ -32,7 +32,7 @@ MOBNAME_ORCDRUM = "";
 MOBNAME_STOVE = "Herd";
 MOBNAME_INNOS = "Innos Statue";
 MOBNAME_RUNEMAKER = "Runentisch";
-MOBNAME_SAW = "BaumsÐ´ge";
+MOBNAME_SAW = "Baumsäge";
 MOBNAME_ARMCHAIR = "Sessel";
 MOBNAME_LIBRARYLEVER = "Lampe";
 MOBNAME_SECRETSWITCH = "";
@@ -43,40 +43,40 @@ MOBNAME_IGARAZ = "Igaraz Truhe";
 MOBNAME_ALMANACH = "Almanach";
 MOBNAME_CITY = "Nach Khorinis";
 MOBNAME_TAVERN = "Zur Taverne";
-MOBNAME_GR_PEASANT = "Zum GroÐ¯bauer";
+MOBNAME_GR_PEASANT = "Zum Großbauer";
 MOBNAME_MONASTERY = "Zum Kloster";
 MOBNAME_PASSOW = "Zum Pass";
 MOBNAME_CITY2 = "Zur Taverne";
 MOBNAME_LIGHTHOUSE = "Zum Leuchturm";
 MOBNAME_MONASTERY2 = "Zur Taverne";
-MOBNAME_PRISON = "zur GefÐ´ngnis-Kolonie";
+MOBNAME_PRISON = "zur Gefängnis-Kolonie";
 MOBNAME_GR_PEASANT2 = "Zur Taverne";
 MOBNAME_INCITY01 = "zum Hafen";
 MOBNAME_INCITY02 = "zum Marktplatz";
 MOBNAME_INCITY03 = "zum Oberen Viertel";
 MOBNAME_INCITY04 = "zur Kaufmannsgasse";
 MOBNAME_INCITY05 = "zum Tempelplatz";
-MOBNAME_BOW_01 = "Bognerei 'zum TÑ†dlichen Pfeil'";
+MOBNAME_BOW_01 = "Bognerei 'zum Tödlichen Pfeil'";
 MOBNAME_MIX_01 = "Matteo's Allerlei";
 MOBNAME_MIX_02 = "Halvor's Fischstube 'zur glitschigen Forelle'";
-MOBNAME_SMITH_01 = "Zum glÑŒhenden Amboss";
+MOBNAME_SMITH_01 = "Zum glühenden Amboss";
 MOBNAME_BAR_01 = "Taverne 'zum Einbeinigen Klabauter'";
-MOBNAME_BAR_02 = "Taverne 'zur frÑ†hlichen Mastsau'";
+MOBNAME_BAR_02 = "Taverne 'zur fröhlichen Mastsau'";
 MOBNAME_Hotel_01 = "Herberge 'zum Schlafenden Geldsack'";
 MOBNAME_Hotel_02 = "Die rote Laterne";
 MOBNAME_TAVERN_01 = "Zur toten Harpie";
-MOBNAME_SALANDRIL = "Salandril's TrÐ´nke";
+MOBNAME_SALANDRIL = "Salandril's Tränke";
 MOBNAME_GRAVETEAM_01 = "Snoelk - 'Oh guck mal ein Schalter'";
 MOBNAME_GRAVETEAM_02 = "Oelk - 'NEINNNNNNNNNNNNNNNNNN'";
 MOBNAME_GRAVETEAM_03 = "Hodges - 'Alles wird gut'";
 MOBNAME_GRAVETEAM_04 = "Hosh - 'Der letzte Scheiss'";
 MOBNAME_GRAVETEAM_05 = "Chase - 'Was haltet ihr davon ?'";
-MOBNAME_GRAVETEAM_06 = "BjÑ†rn - 'Weiter aufÒ‘s Ziel zu!'";
+MOBNAME_GRAVETEAM_06 = "Björn - 'Weiter auf´s Ziel zu!'";
 MOBNAME_GRAVETEAM_07 = "Michael - 'Ich ruhe mich nur kurz aus...'";
-MOBNAME_GRAVETEAM_08 = "Kairo - 'SekÑŒndchen noch!'";
-MOBNAME_GRAVETEAM_09 = "Onkel Kronkel - 'zum SchluÐ¯ fand er den Skorpionmann'";
+MOBNAME_GRAVETEAM_08 = "Kairo - 'Sekündchen noch!'";
+MOBNAME_GRAVETEAM_09 = "Onkel Kronkel - 'zum Schluß fand er den Skorpionmann'";
 MOBNAME_GRAVETEAM_10 = "NicoDE - 'Hello, World!'";
-MOBNAME_GRAVETEAM_11 = "Sascha - 'Der Spieler weiÐ¯ gar nicht, warum er dahin gehen soll...'";
+MOBNAME_GRAVETEAM_11 = "Sascha - 'Der Spieler weiß gar nicht, warum er dahin gehen soll...'";
 MOBNAME_GRAVETEAM_12 = "Andre - 'Fallen die Segel schnell oder langsam runter?'";
 MOBNAME_GRAVETEAM_13 = "Mihai - 'Yeah, I can show you something..'";
 MOBNAME_GRAVETEAM_14 = "Uwe - 'Welcher Level bist du denn mit deinem Paladin'";
@@ -84,7 +84,7 @@ MOBNAME_GRAVE_01 = "Baron Heinrich von Stahl 551 - 589 'Er kam, sah, und starb'"
 MOBNAME_GRAVE_02 = "Bertran 465 - 480 'Ich wollte immer schon mal Fliegenpilze essen'";
 MOBNAME_GRAVE_03 = "Isolde 525 - 550";
 MOBNAME_GRAVE_04 = "Unbekannt";
-MOBNAME_GRAVE_05 = "Dex Cantionis 325 - 431 'Ich hab schon seit Tagen MagenkrÐ´mpfe?''";
+MOBNAME_GRAVE_05 = "Dex Cantionis 325 - 431 'Ich hab schon seit Tagen Magenkrämpfe?''";
 MOBNAME_GRAVE_06 = "Uthar Lichtbringer 205 - 531";
 MOBNAME_GRAVE_07 = "Yasmin 510 - 545";
 MOBNAME_GRAVE_08 = "Onurb 634 - 579 - ' Etlepmerkegmu red'";
@@ -110,8 +110,8 @@ MOBNAME_GRAVE_27 = "Zahra 713 - 752";
 MOBNAME_GRAVE_28 = "Freiherr Simbus von Kahr 120 - 212";
 MOBNAME_GRAVE_29 = "Graf Anieb zu Waldfried 117 - 212";
 MOBNAME_GRAVE_30 = "Graf Lazar von Siegburg 156 - 212";
-MOBNAME_GRAVE_31 = "SchwerttrÐ´ger Asub Ukara 145 - 212";
-MOBNAME_GRAVE_32 = "SchwerttrÐ´ger Dietmar Ukara 112 - 212";
+MOBNAME_GRAVE_31 = "Schwertträger Asub Ukara 145 - 212";
+MOBNAME_GRAVE_32 = "Schwertträger Dietmar Ukara 112 - 212";
 MOBNAME_GRAVE_33 = "Ehrengardist Uthar Seranis 178 - 212";
 /*
 TXT_GUILDS[62] =
@@ -119,14 +119,14 @@ TXT_GUILDS[62] =
 	"Gildenlos",
 	"Paladin",
 	"Miliz",
-	"BÑŒrger",
+	"Bürger",
 	"Magier",
 	"Novize",
-	"DrachenjÐ´ger",
-	"SÑ†ldner",
+	"Drachenjäger",
+	"Söldner",
 	"Bauer",
 	"Bandit",
-	"StrÐ´fling",
+	"Sträfling",
 	"Suchender",
 	"Landbewohner",
 	"B",
@@ -140,7 +140,7 @@ TXT_GUILDS[62] =
 	"B. Goblin Skelett",
 	"Scavenger",
 	"Riesenratte",
-	"FeldrÐ´uber",
+	"Feldräuber",
 	"Blutfliege",
 	"Waran",
 	"Wolf",
@@ -152,15 +152,15 @@ TXT_GUILDS[62] =
 	"Skelett-Magier",
 	"Zombie",
 	"Snapper",
-	"SchattenlÐ´ufer",
+	"Schattenläufer",
 	"Skelettmonster",
 	"Harpie",
 	"Steingolem",
 	"Feuergolem",
 	"Eisgolem",
 	"B. Golem",
-	"DÐ´mon",
-	"B. DÐ´mon",
+	"Dämon",
+	"B. Dämon",
 	"Troll",
 	"Sumpfhai",
 	"Drache",
@@ -186,9 +186,9 @@ TXT_SPELLS[68] =
 	"Kleine Wundheilung",
 	"Heiliger Pfeil",
 	"Mittlere Wundheilung",
-	"BÑ†ses Vertreiben",
+	"Böses Vertreiben",
 	"Grosse Wundheilung",
-	"BÑ†ses Vernichten",
+	"Böses Vernichten",
 	"Teleport",
 	"Zur Hafenstadt",
 	"Zum Kloster",
@@ -197,7 +197,7 @@ TXT_SPELLS[68] =
 	"Zum Pass in Khorinis",
 	"Zum Pass im Minental",
 	"Zur Burg",
-	"Zum alten DÐ´monenturm",
+	"Zum alten Dämonenturm",
 	"Zur Taverne",
 	"T3",
 	"Licht",
@@ -222,7 +222,7 @@ TXT_SPELLS[68] =
 	"Grosser Feuersturm",
 	"Kleiner Feuersturm",
 	"Eiswelle",
-	"DÐ´mon",
+	"Dämon",
 	"Vollheilung",
 	"Feuerregen",
 	"Todeshauch",
@@ -232,7 +232,7 @@ TXT_SPELLS[68] =
 	"Schaf",
 	"Scavenger",
 	"Riesenratte",
-	"FeldrÐ´uber",
+	"Feldräuber",
 	"Wolf",
 	"Waran",
 	"Snapper",
@@ -255,9 +255,9 @@ NAME_SPL_PalLight = "Heiliges Licht";
 NAME_SPL_PalLightHeal = "Kleine Wundheilung";
 NAME_SPL_PalHolyBolt = "Heiliger Pfeil";
 NAME_SPL_PalMediumHeal = "Mittlere Wundheilung";
-NAME_SPL_PalRepelEvil = "BÑ†ses vertreiben";
+NAME_SPL_PalRepelEvil = "Böses vertreiben";
 NAME_SPL_PalFullHeal = "Grosse Wundheilung";
-NAME_SPL_PalDestroyEvil = "BÑ†ses vernichten";
+NAME_SPL_PalDestroyEvil = "Böses vernichten";
 NAME_SPL_PalTeleportSecret = "Teleport";
 NAME_SPL_TeleportSeaport = "Teleport zur Hafenstadt";
 NAME_SPL_TeleportMonastery = "Teleport zum Kloster";
@@ -266,7 +266,7 @@ NAME_SPL_TeleportXardas = "Teleport zu Xardas";
 NAME_SPL_TeleportPassNW = "Teleport zum Pass in Khorinis";
 NAME_SPL_TeleportPassOW = "Teleport zum Pass im Minental";
 NAME_SPL_TeleportOC = "Teleport zur Burg";
-NAME_SPL_TeleportOWDemonTower = "Teleport zum alten DÐ´monenturm";
+NAME_SPL_TeleportOWDemonTower = "Teleport zum alten Dämonenturm";
 NAME_SPL_TeleportTaverne = "Teleport zur Taverne";
 NAME_SPL_TELEPORT_3 = "T3";
 NAME_SPL_Light = "Licht";
@@ -291,7 +291,7 @@ NAME_SPL_DestroyUndead = "Untote vernichten";
 NAME_SPL_ChargeFireball = "Grosser Feuerball";
 NAME_SPL_Pyrokinesis = "Grosser Feuersturm";
 NAME_SPL_IceWave = "Eiswelle";
-NAME_SPL_SummonDemon = "DÐ´mon beschwÑ†ren";
+NAME_SPL_SummonDemon = "Dämon beschwören";
 NAME_SPL_FullHeal = "Schwere Wunden heilen";
 NAME_SPL_MasterOfDisaster = "Heiliges Geschoss";
 NAME_SPL_Firerain = "Feuerregen";
@@ -303,24 +303,24 @@ NAME_SPL_Charm = "Vergessen";
 NAME_SPL_TrfSheep = "Verwandlung Schaf";
 NAME_SPL_TrfScavenger = "Verwandlung Scavenger";
 NAME_SPL_TrfGiantRat = "Verwandlung Riesenratte";
-NAME_SPL_TrfGiantBug = "Verwandlung FeldrÐ´uber";
+NAME_SPL_TrfGiantBug = "Verwandlung Feldräuber";
 NAME_SPL_TrfWolf = "Verwandlung Wolf";
 NAME_SPL_TrfWaran = "Verwandlung Waran";
 NAME_SPL_TrfSnapper = "Verwandlung Snapper";
 NAME_SPL_TrfWarg = "Verwandlung Warg";
 NAME_SPL_TrfFireWaran = "Verwandlung Feuerwaran";
 NAME_SPL_TrfLurker = "Verwandlung Lurker";
-NAME_SPL_TrfShadowbeast = "Verwandlung SchattenlÐ´ufer";
+NAME_SPL_TrfShadowbeast = "Verwandlung Schattenläufer";
 NAME_SPL_TrfDragonSnapper = "Verwandlung Drachensnapper";
 /*
 TXT_TALENTS[22] =
 {
 	"",
-	"EinhÐ´nder",
-	"ZweihÐ´nder",
+	"Einhänder",
+	"Zweihänder",
 	"Bogen",
 	"Armbrust",
-	"SchlÑ†sser Ñ†ffnen",
+	"Schlösser öffnen",
 	"",
 	"Magie",
 	"Schleichen",
@@ -342,10 +342,10 @@ TXT_TALENTS[22] =
 TXT_TALENTS_SKILLS[22] =
 {
 	"",
-	"AnfÐ´nger|KÐ´mpfer|Meister",
-	"AnfÐ´nger|KÐ´mpfer|Meister",
-	"AnfÐ´nger|SchÑŒtze|Meister",
-	"AnfÐ´nger|SchÑŒtze|Meister",
+	"Anfänger|Kämpfer|Meister",
+	"Anfänger|Kämpfer|Meister",
+	"Anfänger|Schütze|Meister",
+	"Anfänger|Schütze|Meister",
 	"-|Gelernt|-",
 	"0|1|2",
 	"0|1|2|3|4|5|6",
@@ -369,42 +369,42 @@ TXT_INV_CAT[9] =
 {
 	"",
 	"Waffen",
-	"RÑŒstungen",
+	"Rüstungen",
 	"Magie",
 	"Artefakte",
 	"Nahrung",
-	"TrÐ´nke",
+	"Tränke",
 	"Schriften",
 	"Verschiedenes"
 };*/
 NAME_Paladin = "Paladin";
 NAME_Miliz = "Stadtwache";
 NAME_Torwache = "Torwache";
-NAME_Tuerwache = "TÑŒrwache";
+NAME_Tuerwache = "Türwache";
 NAME_Stadtwache = "Stadtwache";
 NAME_Arbeiter = "Arbeiter";
 NAME_Ritter = "Ritter";
 NAME_Wache = "Wache";
-NAME_Buerger = "BÑŒrger";
-NAME_Buergerin = "BÑŒrgerin";
+NAME_Buerger = "Bürger";
+NAME_Buergerin = "Bürgerin";
 NAME_Magd = "Magd";
 NAME_Magier = "Magier";
 NAME_Novize = "Novize";
-NAME_Drachenjaeger = "DrachenjÐ´ger";
-NAME_ToterDrachenjaeger = "Toter DrachenjÐ´ger";
-NAME_Soeldner = "SÑ†ldner";
+NAME_Drachenjaeger = "Drachenjäger";
+NAME_ToterDrachenjaeger = "Toter Drachenjäger";
+NAME_Soeldner = "Söldner";
 NAME_Bauer = "Bauer";
-NAME_Baeuerin = "BÐ´uerin";
+NAME_Baeuerin = "Bäuerin";
 NAME_Bandit = "Bandit";
-NAME_Straefling = "StrÐ´fling";
+NAME_Straefling = "Sträfling";
 NAME_Waffenknecht = "Waffenknecht";
 NAME_Dementor = "Suchender";
 NAME_ToterNovize = "Toter Novize";
 NAME_Antipaldin = "Orkischer Kriegsherr";
 NAME_Schiffswache = "Schiffswache";
-NAME_Fluechtling = "FlÑŒchtling";
+NAME_Fluechtling = "Flüchtling";
 Dialog_Ende = "ENDE";
-Dialog_Back = "ZURÐ¬CK";
+Dialog_Back = "ZURÜCK";
 DIALOG_TRADE = "(Handeln)";
 DIALOG_PICKPOCKET = "(Taschendiebstahl versuchen)";
 NAME_Ring = "Ring";
@@ -421,9 +421,9 @@ NAME_ManakostenMax = "Manakosten (max.):";
 NAME_ManaPerSec = "Mana pro Sec.";
 NAME_Duration = "Dauer (Minuten)";
 NAME_Sec_Duration = "Dauer (Sekunden)";
-NAME_Mana_needed = "benÑ†tigtes Mana:";
-NAME_Str_needed = "benÑ†tigte StÐ´rke:";
-NAME_Dex_needed = "benÑ†tigte Geschicklichkeit:";
+NAME_Mana_needed = "benötigtes Mana:";
+NAME_Str_needed = "benötigte Stärke:";
+NAME_Dex_needed = "benötigte Geschicklichkeit:";
 //NAME_Spell_Load = "Aufladbarer Zauber";
 //NAME_Spell_Invest = "Aufrechterhaltungs-Zauber";
 NAME_Dam_Edge = "Waffenschaden";
@@ -441,36 +441,36 @@ NAME_Prot_Fire = "Schutz vor Feuer:";
 NAME_Prot_Magic = "Schutz vor Magie:";
 NAME_Bonus_HP = "Lebensenergie-Bonus:";
 NAME_Bonus_Mana = "Mana-Bonus:";
-NAME_Bonus_HpMax = "Bonus fÑŒr maximale Lebensenergie:";
-NAME_Bonus_ManaMax = "Bonus fÑŒr maximales Mana:";
+NAME_Bonus_HpMax = "Bonus für maximale Lebensenergie:";
+NAME_Bonus_ManaMax = "Bonus für maximales Mana:";
 NAME_Bonus_Dex = "Geschicklichkeits-Bonus:";
-NAME_Bonus_Str = "StÐ´rke-Bonus:";
+NAME_Bonus_Str = "Stärke-Bonus:";
 NAME_OneHanded = "Einhandwaffe";
 NAME_TwoHanded = "Zweihandwaffe";
 NAME_HealingPerMana = "Heilung pro Mana";
 NAME_HealingPerCast = "Heilkraft:";
 NAME_ItMw_1H_Common_01 = "Selbstgeschmiedetes Schwert";
 NAME_ItMw_1H_Special_01 = "Erz-Langschwert";
-NAME_ItMw_2H_Special_01 = "Erz-ZweihÐ´nder";
+NAME_ItMw_2H_Special_01 = "Erz-Zweihänder";
 NAME_ItMw_1H_Special_02 = "Erz-Bastardschwert";
-NAME_ItMw_2H_Special_02 = "Schwerer Erz-ZweihÐ´nder";
+NAME_ItMw_2H_Special_02 = "Schwerer Erz-Zweihänder";
 NAME_ItMw_1H_Special_03 = "Erz-Schlachtklinge";
 NAME_ItMw_2H_Special_03 = "Schwere Erz-Schlachtklinge";
-NAME_ItMw_1H_Special_04 = "Erz-DrachentÑ†ter";
-NAME_ItMw_2H_Special_04 = "Grosser Erz-DrachentÑ†ter";
+NAME_ItMw_1H_Special_04 = "Erz-Drachentöter";
+NAME_ItMw_2H_Special_04 = "Grosser Erz-Drachentöter";
 PRINT_GoldGegeben = " Gold gegeben";
 PRINT_ItemGegeben = " Gegenstand gegeben";
-PRINT_ItemsGegeben = " GegenstÐ´nde gegeben";
+PRINT_ItemsGegeben = " Gegenstände gegeben";
 PRINT_GoldErhalten = " Gold erhalten";
 PRINT_ItemErhalten = " Gegenstand erhalten";
-PRINT_ItemsErhalten = " GegenstÐ´nde erhalten";
+PRINT_ItemsErhalten = " Gegenstände erhalten";
 PRINT_Kosten = ". Kosten: ";
 PRINT_LP = " LP";
 PRINT_1LP = " LP";
 PRINT_2LP = " LP";
 //PRINT_NotEnoughLP = "Nicht genug Lernpunkte!";
 PRINT_NoLearnOverPersonalMAX = "Maximum dieses Lehrers liegt bei ";
-PRINT_LearnSTR = "StÐ´rke + ";
+PRINT_LearnSTR = "Stärke + ";
 PRINT_LearnDEX = "Geschicklichkeit + ";
 PRINT_LearnMANA_MAX = "Mana + ";
 PRINT_Learnhitpoints_MAX = "Lebensenergie + ";
@@ -489,7 +489,7 @@ PRINT_LearnBow = "Verbessere: Treffen mit Bogen";
 PRINT_LearnBow_and_Crossbow = "Verbessere: Treffen mit Bogen und Armbrust";
 PRINT_LearnCrossbow = "Verbessere: Treffen mit Armbrust";
 PRINT_LearnCrossbow_and_Bow = "Verbessere: Treffen mit Armbrust und Bogen";
-PRINT_LearnPicklock = "Lerne: SchlÑ†sser knacken";
+PRINT_LearnPicklock = "Lerne: Schlösser knacken";
 PRINT_LearnSneak = "Lerne: Schleichen";
 PRINT_LearnAcrobat = "Lerne: Akrobatik";
 PRINT_LearnPickpocket = "Lerne: Taschendiebstahl";
@@ -500,8 +500,8 @@ PRINT_LearnAlchemyInnosEye = "Lerne: Auge Innos aufladen";
 PRINT_LearnTakeAnimalTrophy = "Lerne: Tiere ausschlachten";
 PRINT_LearnPalTeleportSecret = "Lerne: Geheime Teleport Rune bauen";
 PRINT_NotEnoughLearnPoints = "Zu wenig Lernpunkte!";
-PRINT_LearnSTR1 = "StÐ´rke + 1";
-PRINT_LearnSTR5 = "StÐ´rke + 5";
+PRINT_LearnSTR1 = "Stärke + 1";
+PRINT_LearnSTR5 = "Stärke + 5";
 PRINT_LearnDEX1 = "Geschicklichkeit + 1";
 PRINT_LearnDEX5 = "Geschicklichkeit + 5";
 PRINT_LearnMANA1 = "Mana + 1";
@@ -515,7 +515,7 @@ PRINT_LearnBow5 = "Bogen + 5";
 PRINT_LearnCrossBow1 = "Armbrust + 1";
 PRINT_LearnCrossBow5 = "Armbrust + 5";
 PRINT_SleepOver = "Du hast geschlafen und bist ausgeruht!";
-PRINT_SleepOverObsessed = "AlptrÐ´ume verwehren dir Erholung!";
+PRINT_SleepOverObsessed = "Alpträume verwehren dir Erholung!";
 PRINT_SmithSuccess = "Waffe hergestellt!";
 PRINT_RuneSuccess = "Rune hergestellt!";
 PRINT_AlchemySuccess = "Trank hergestellt!";
@@ -523,58 +523,58 @@ PRINT_AlchemySuccessInnoseye = "Das Auge Innos pulsiert voller Energie!";
 PRINT_ProdItemsMissing = "Zu wenig Rohstoffe";
 PRINT_TabakSuccess = "Neue Tabaksorte gemischt!";
 PRINT_JointSuccess = "Sumpfkraut - Stengel gedreht!";
-PRINT_NoInnosTears = "Dir fehlen die `TrÐ´nen InnosÒ‘.";
-PRINT_KeyMissing = "DafÑŒr brauche ich den richtigen SchlÑŒssel";
+PRINT_NoInnosTears = "Dir fehlen die `Tränen Innos´.";
+PRINT_KeyMissing = "Dafür brauche ich den richtigen Schlüssel";
 PRINT_PicklockMissing = "Ich brauche einen Dietrich";
-PRINT_Picklock_or_KeyMissing = "Ich brauche entweder den SchlÑŒssel oder einen Dietrich";
-PRINT_NeverOpen = "Da lÐ´sst sich nichts machen";
+PRINT_Picklock_or_KeyMissing = "Ich brauche entweder den Schlüssel oder einen Dietrich";
+PRINT_NeverOpen = "Da lässt sich nichts machen";
 PRINT_Toofar_Away = "Das ist zu weit entfernt";
 PRINT_WrongSide = "Das ist die falsche Seite";
 PRINT_MissingItem = "Mir fehlt der entsprechende Gegenstand";
 PRINT_AnotherUser = "Das wird gerade benutzt";
-PRINT_NoPicklockTalent = "DafÑŒr habe ich kein Talent";
+PRINT_NoPicklockTalent = "Dafür habe ich kein Talent";
 PRINT_NOTHINGTOGET = "Da ist nichts zu holen...";
 PRINT_NOTHINGTOGET02 = "Nichts zu holen...";
-PRINT_NOTHINGTOGET03 = "Nichts zu plÑŒndern...";
-PRINT_BlessSTR = "Innos erhÑ†rt dich und schenkt dir: StÐ´rke + ";
-PRINT_BlessDEX = "Innos erhÑ†rt dich und schenkt dir: Geschicklichkeit + ";
-PRINT_BlessMANA_MAX = "Innos erhÑ†rt dich und schenkt dir: Mana + ";
-PRINT_BlessHitpoints_MAX = "Innos erhÑ†rt dich und schenkt dir: Lebensenergie + ";
-PRINT_BlessMANA = "Innos erhÑ†rt dich und du bist erfÑŒllt von geistiger Klarheit.";
-PRINT_BlessHitpoints = "Innos erhÑ†rt dich und heilt dich.";
-Print_BlessMana_Hit = "Innos erhÑ†rt dich du fÑŒhlst dich wie neugeboren.";
-Print_BlessNone = "Innos dankt fÑŒr dein Gebet.";
+PRINT_NOTHINGTOGET03 = "Nichts zu plündern...";
+PRINT_BlessSTR = "Innos erhört dich und schenkt dir: Stärke + ";
+PRINT_BlessDEX = "Innos erhört dich und schenkt dir: Geschicklichkeit + ";
+PRINT_BlessMANA_MAX = "Innos erhört dich und schenkt dir: Mana + ";
+PRINT_BlessHitpoints_MAX = "Innos erhört dich und schenkt dir: Lebensenergie + ";
+PRINT_BlessMANA = "Innos erhört dich und du bist erfüllt von geistiger Klarheit.";
+PRINT_BlessHitpoints = "Innos erhört dich und heilt dich.";
+Print_BlessMana_Hit = "Innos erhört dich du fühlst dich wie neugeboren.";
+Print_BlessNone = "Innos dankt für dein Gebet.";
 Print_NotEnoughGold = "Zuwenig Gold.";
 Bless_Sword = "Schwert weihen (5000 Gold)";
-Bless_Sword2 = "Schwert weihen (TrÐ´nen Innos)";
-Pray_Paladin1 = "...Innos, halte deine schÑŒtzende Hand ÑŒber deine Streiter...";
+Bless_Sword2 = "Schwert weihen (Tränen Innos)";
+Pray_Paladin1 = "...Innos, halte deine schützende Hand über deine Streiter...";
 Pray_Paladin2 = "...segne sie mit deinem Feuer und schenke ihnen Kraft...";
-Pray_Paladin3 = "...auf das sie in deinem Namen mutig kÐ´mpfen... ";
+Pray_Paladin3 = "...auf das sie in deinem Namen mutig kämpfen... ";
 Pray_Paladin4 = "...bis zum Sieg oder zum Tod, so wie es dein Wille ist.";
-PRINT_FullyHealed = "VollstÐ´ndig geheilt";
-PRINT_Eat1 = "Du fÑŒhlst dich erfrischt";
+PRINT_FullyHealed = "Vollständig geheilt";
+PRINT_Eat1 = "Du fühlst dich erfrischt";
 PRINT_Eat2 = "Schmeckt saftig und frisch";
-PRINT_Eat3 = "Du fÑŒhlst dich gesund und stark!";
-Print_ReadAstronomy = "Ein GefÑŒhl gÑ†ttlicher Erkenntnis erfÑŒllt dich.";
+PRINT_Eat3 = "Du fühlst dich gesund und stark!";
+Print_ReadAstronomy = "Ein Gefühl göttlicher Erkenntnis erfüllt dich.";
 PRINT_GornsTreasure = "100 Gold erhalten.";
 PRINT_KerolothsGeldBeutel = "300 Gold erhalten.";
 PRINT_MalethBanditsGold = "300 Gold erhalten";
 Print_DiegosTreasure = "2000 Gold erhalten";
-PRINT_IrdorathBookDoesntOpen = "Der Einband des Buches lÐ´sst sich nicht Ñ†ffnen.";
-PRINT_IrdorathBookHiddenKey = "Im Einband des Buches ist ein SchlÑŒssel versteckt!";
+PRINT_IrdorathBookDoesntOpen = "Der Einband des Buches lässt sich nicht öffnen.";
+PRINT_IrdorathBookHiddenKey = "Im Einband des Buches ist ein Schlüssel versteckt!";
 PRINT_FishLetter = "Im Fisch ist ein Zettel versteckt";
 Print_InnoseyeGiven = "Auge Innos gegeben";
 Print_InnosEyeGet = "Auge Innos erhalten";
-PRINT_GotFourItems = "4 GegenstÐ´nde erhalten ";
-PRINT_STR1 = "StÐ´rke +1";
+PRINT_GotFourItems = "4 Gegenstände erhalten ";
+PRINT_STR1 = "Stärke +1";
 PRINT_MANA10 = "Mana +10";
 PRINT_DEX2 = "Geschicklichkeit + 2";
-PRINT_OrcEliteRingEquip = "Du fÑŒhlst dich geschwÐ´cht.";
-PRINT_SCIsObsessed = "Ein beklemmendes GefÑŒhl befÐ´llt dich!";
-PRINT_ClearSCObsession = "Du fÑŒhlst dich erlÑ†st!";
-PRINT_NUMBERLEFT = "	 ÑŒbrig";
-PRINT_NovizenLeft = "	 Novizen ÑŒbrig";
-PRINT_DragKillCount = "Der Feind ist besiegt und diesmal werde ich nicht wieder unter Felsen verschimmeln. Nichts wie raus hier, zurÑŒck aufÒ‘s Schiff.";
+PRINT_OrcEliteRingEquip = "Du fühlst dich geschwächt.";
+PRINT_SCIsObsessed = "Ein beklemmendes Gefühl befällt dich!";
+PRINT_ClearSCObsession = "Du fühlst dich erlöst!";
+PRINT_NUMBERLEFT = "	 übrig";
+PRINT_NovizenLeft = "	 Novizen übrig";
+PRINT_DragKillCount = "Der Feind ist besiegt und diesmal werde ich nicht wieder unter Felsen verschimmeln. Nichts wie raus hier, zurück auf´s Schiff.";
 PRINT_Smith_1H_Special_01 = " (1 Erz)";
 PRINT_Smith_2H_Special_01 = " (2 Erz)";
 PRINT_Smith_1H_Special_02 = " (2 Erz)";
@@ -595,8 +595,8 @@ PRINT_FoundGold100 = "100 Gold gefunden";
 PRINT_FoundRuneBlank = "Runenstein gefunden";
 PRINT_FoundOreNugget = "Erzbrocken gefunden";
 PRINT_FoundLockpick = "Dietrich gefunden";
-PRINT_HannasBeutel = "Ein kleiner SchlÑŒssel und ein paar Dietriche...";
-PRINT_GotPlants = "Einige KrÐ´uter gefunden";
+PRINT_HannasBeutel = "Ein kleiner Schlüssel und ein paar Dietriche...";
+PRINT_GotPlants = "Einige Kräuter gefunden";
 PRINT_NoSweeping = "Alle Kammern auszufegen dauert ewig!";
 PRINT_Mandibles = "Das Sekret zeigt keine Wirkung mehr.";
 PRINT_Bloodfly = "Schmeckt bitter und giftig";
@@ -609,43 +609,43 @@ PRINT_BiffGold = " Gold";
 TEXT_Innoseye_Setting_Broken = "Die Fassung des Amuletts ist zerbrochen";
 TEXT_Innoseye_Setting_Repaired = "Die Fassung des Amuletts ist intakt";
 TEXT_Innoseye_Gem = "Der Edelstein ist matt und kraftlos";
-Pickpocket_20 = "(Es wÐ´re ein Kinderspiel seinen Geldbeutel zu stehlen)";
-Pickpocket_40 = "(Es wÐ´re einfach seinen Geldbeutel zu stehlen)";
-Pickpocket_60 = "(Es wÐ´re gewagt seinen Geldbeutel zu stehlen)";
-Pickpocket_80 = "(Es wÐ´re schwierig seinen Geldbeutel zu stehlen)";
-Pickpocket_100 = "(Es wÐ´re verdammt schwierig seinen Geldbeutel zu stehlen)";
-Pickpocket_120 = "(Es wÐ´re fast unmÑ†glich seinen Geldbeutel zu stehlen)";
-Pickpocket_20_Female = "(Es wÐ´re ein Kinderspiel ihren Geldbeutel zu stehlen)";
-Pickpocket_40_Female = "(Es wÐ´re einfach ihren Geldbeutel zu stehlen)";
-Pickpocket_60_Female = "(Es wÐ´re gewagt ihren Geldbeutel zu stehlen)";
-Pickpocket_80_Female = "(Es wÐ´re schwierig ihren Geldbeutel zu stehlen)";
-Pickpocket_100_Female = "(Es wÐ´re verdammt schwierig ihren Geldbeutel zu stehlen)";
-Pickpocket_120_Female = "(Es wÐ´re fast unmÑ†glich ihren Geldbeutel zu stehlen)";
+Pickpocket_20 = "(Es wäre ein Kinderspiel seinen Geldbeutel zu stehlen)";
+Pickpocket_40 = "(Es wäre einfach seinen Geldbeutel zu stehlen)";
+Pickpocket_60 = "(Es wäre gewagt seinen Geldbeutel zu stehlen)";
+Pickpocket_80 = "(Es wäre schwierig seinen Geldbeutel zu stehlen)";
+Pickpocket_100 = "(Es wäre verdammt schwierig seinen Geldbeutel zu stehlen)";
+Pickpocket_120 = "(Es wäre fast unmöglich seinen Geldbeutel zu stehlen)";
+Pickpocket_20_Female = "(Es wäre ein Kinderspiel ihren Geldbeutel zu stehlen)";
+Pickpocket_40_Female = "(Es wäre einfach ihren Geldbeutel zu stehlen)";
+Pickpocket_60_Female = "(Es wäre gewagt ihren Geldbeutel zu stehlen)";
+Pickpocket_80_Female = "(Es wäre schwierig ihren Geldbeutel zu stehlen)";
+Pickpocket_100_Female = "(Es wäre verdammt schwierig ihren Geldbeutel zu stehlen)";
+Pickpocket_120_Female = "(Es wäre fast unmöglich ihren Geldbeutel zu stehlen)";
 
 
-PRINT_PICKLOCK_SUCCESS = "Das hÑ†rte sich gut an";
-PRINT_PICKLOCK_UNLOCK = "Das SchloÐ¯ ist geknackt";
+PRINT_PICKLOCK_SUCCESS = "Das hörte sich gut an";
+PRINT_PICKLOCK_UNLOCK = "Das Schloß ist geknackt";
 PRINT_PICKLOCK_FAILURE = "Mist.. wieder von vorne";
 PRINT_PICKLOCK_BROKEN = "Der Dietrich ist abgebrochen";
 PRINT_HITPOINTS_MISSING = "Lebenspunkte zu wenig";
 PRINT_HITPOINTS_MAX_MISSING = "maximale Lebenspunkte zu wenig";
 PRINT_MANA_MISSING = "Manapunkte zu wenig";
 PRINT_MANA_MAX_MISSING = "maximale Manapunkte zu wenig";
-PRINT_STRENGTH_MISSING = "StÐ´rkepunkte zu wenig";
+PRINT_STRENGTH_MISSING = "Stärkepunkte zu wenig";
 PRINT_DEXTERITY_MISSING = "Geschicklichkeitspunkte zu wenig";
 PRINT_MAGCIRCLES_MISSING = "magische Kreise zu niedrig, um die Rune anzulegen";
 PRINT_MAGCIRCLES_LOW = "magische Kreise zu niedrig, um die Rune anzulegen";
-_STR_MESSAGE_INTERACT_NO_KEY = "kein Dietrich oder passender SchlÑŒssel";
+_STR_MESSAGE_INTERACT_NO_KEY = "kein Dietrich oder passender Schlüssel";
 _STR_MESSAGE_TRADE_FAILURE = "der Wert deiner Tauschware ist nicht hoch genug";
 STR_INFO_TRADE_ACCEPT = "Annehmen";
 STR_INFO_TRADE_RESET = "Ablehnen";
-STR_INFO_TRADE_EXIT = "ZurÑŒck";
-MENU_TEXT_NEEDS_APPLY = "Zum aktivieren RETURN drÑŒcken!";
+STR_INFO_TRADE_EXIT = "Zurück";
+MENU_TEXT_NEEDS_APPLY = "Zum aktivieren RETURN drücken!";
 MENU_TEXT_NEEDS_RESTART = "Einige Einstellungen werden erst nach einem Neustart aktiv";
 KapWechsel_1 = "Kapitel 1";
 KapWechsel_1_Text = "Die Bedrohung";
 KapWechsel_2 = "Kapitel 2";
-KapWechsel_2_Text = "RÑŒckkehr in die Kolonie";
+KapWechsel_2_Text = "Rückkehr in die Kolonie";
 KapWechsel_3 = "Kapitel 3";
 KapWechsel_3_Text = "Das Auge Innos";
 KapWechsel_4 = "Kapitel 4";
