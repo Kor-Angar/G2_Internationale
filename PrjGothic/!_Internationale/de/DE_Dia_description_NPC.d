@@ -3270,252 +3270,201 @@ func void DE_Dia_description_NPC ()
 //	 B_AssignAmbientInfos
 //
 //***********************************
-DIA_AkilsSchaf_KommMit.description = "Komm mit!";
-DIA_BAU_1_EXIT.description = DIALOG_ENDE;
-DIA_BAU_1_JOIN.description = "Ich will mehr ?ber die S?ldner wissen.";
-DIA_BAU_1_PEOPLE.description = "Wer hat hier das Sagen?";
-DIA_BAU_1_LOCATION.description = "Was gibt es so alles es hier in der Gegend?";
-DIA_BAU_1_STANDARD.description = "Was gibt's Neues?";
-DIA_BAU_13_EXIT.description = DIALOG_ENDE;
-DIA_BAU_13_JOIN.description = "Ich will mehr ?ber die S?ldner wissen!";
-DIA_BAU_13_PEOPLE.description = "Wer hat hier das Sagen?";
-DIA_BAU_13_LOCATION.description = "Was kannst du mir ?ber die Gegend hier erz?hlen?";
-DIA_BAU_13_STANDARD.description = "Was gibt's Neues?";
-DIA_BAU_16_EXIT.description = DIALOG_ENDE;
-DIA_BAU_16_JOIN.description = "Ich will mehr ?ber die S?ldner wissen!";
-DIA_BAU_16_PEOPLE.description = "Wer hat hier das Sagen?";
-DIA_BAU_16_LOCATION.description = "Was kannst du mir ?ber die Gegend hier erz?hlen?";
-DIA_BAU_16_STANDARD.description = "Was gibt's Neues?";
-DIA_BAU_7_EXIT.description = DIALOG_ENDE;
-DIA_BAU_7_JOIN.description = "Was wei?t du ?ber die S?ldner?";
-DIA_BAU_7_PEOPLE.description = "Wer hat hier das Sagen?";
-DIA_BAU_7_LOCATION.description = "Erz?hl mir mehr ?ber die Gegend.";
-DIA_BAU_7_STANDARD.description = "Was gibt's Neues?";
-DIA_BDT_1_EXIT.description = DIALOG_ENDE;
-DIA_BDT_1_STANDARD.description = "";
-DIA_BDT_13_EXIT.description = DIALOG_ENDE;
-DIA_BDT_13_STANDARD.description = "";
-DIA_MIL_6_EXIT.description = DIALOG_ENDE;
-DIA_MIL_6_JOIN.description = "Was mu? ich tun, um mich der Miliz anzuschlie?en?";
-DIA_MIL_6_PEOPLE.description = "Erz?hl mir etwas ?ber die Paladine.";
-DIA_MIL_6_LOCATION.description = "Was gibt es ?ber diese Stadt zu wissen?";
-DIA_MIL_6_STANDARD.description = "Was gibt's Neues?";
-DIA_MIL_7_EXIT.description = DIALOG_ENDE;
-DIA_MIL_7_JOIN.description = "Ich will der Miliz beitreten!";
-DIA_MIL_7_PEOPLE.description = "Was wei?t du ?ber die Paladine?";
-DIA_MIL_7_LOCATION.description = "Was habe ich hier in der Stadt f?r M?glichkeiten?";
-DIA_MIL_7_STANDARD.description = "Was gibt's Neues?";
-DIA_NOV_3_EXIT.description = DIALOG_ENDE;
-DIA_NOV_3_Fegen.description = "Ich brauche Hilfe beim Fegen der Novizenkammern.";
-DIA_NOV_3_Wurst.description = "Willst du 'ne Wurst?";
-DIA_NOV_3_JOIN.description = "Ich will ein Magier werden!";
-DIA_NOV_3_PEOPLE.description = "Wer f?hrt dieses Kloster?";
-DIA_NOV_3_LOCATION.description = "Was kannst du mir ?ber dieses Kloster erz?hlen?";
-DIA_NOV_3_STANDARD.description = "Was gibt's Neues?";
-DIA_NOV_8_EXIT.description = DIALOG_ENDE;
-DIA_NOV_8_Fegen.description = "Ich brauche Hilfe beim Fegen der Novizenkammern.";
-DIA_NOV_8_Wurst.description = "Wie w?r's mit 'ner leckeren Schafswurst?";
-DIA_NOV_8_JOIN.description = "Was mu? ich tun, um Magier zu werden?";
-DIA_NOV_8_PEOPLE.description = "Wer leitet das Kloster?";
-DIA_NOV_8_LOCATION.description = "Erz?hl mir etwas ?ber dieses Kloster.";
-DIA_NOV_8_STANDARD.description = "Gibt's irgendwelche Neuigkeiten?";
-DIA_OCPAL_4_EXIT.description = DIALOG_ENDE;
-DIA_OCPAL_4_PEOPLE.description = "Wer hat hier das Kommando?";
-DIA_OCPAL_4_LOCATION.description = "Was kannst du mir ?ber das Minental erz?hlen?";
-DIA_OCPAL_4_STANDARD.description = "Wie ist die Lage?";
-DIA_OCPAL_9_EXIT.description = DIALOG_ENDE;
-DIA_OCPAL_9_PEOPLE.description = "Wer hat hier das Kommando?";
-DIA_OCPAL_9_LOCATION.description = "Was wei?t du ?ber dieses Tal?";
-DIA_OCPAL_9_STANDARD.description = "Wie ist die Lage?";
-DIA_OCVLK_1_EXIT.description = DIALOG_ENDE;
-DIA_OCVLK_1_PEOPLE.description = "Wer hat hier das Kommando?";
-DIA_OCVLK_1_LOCATION.description = "Was wei?t du ?ber das Minental?";
-DIA_OCVLK_1_STANDARD.description = "Wie ist die Lage?";
-DIA_OCVLK_6_EXIT.description = DIALOG_ENDE;
-DIA_OCVLK_6_PEOPLE.description = "Wer hat hier das Sagen?";
-DIA_OCVLK_6_LOCATION.description = "Was kannst du mir ?ber die Lage im Minental sagen?";
-DIA_OCVLK_6_STANDARD.description = "Wie steht's?";
-DIA_OUT_1_EXIT.description = DIALOG_ENDE;
-DIA_OUT_1_STANDARD.description = "";
-DIA_OUT_13_EXIT.description = DIALOG_ENDE;
-DIA_OUT_13_STANDARD.description = "";
-DIA_OUT_7_EXIT.description = DIALOG_ENDE;
-DIA_OUT_7_STANDARD.description = "";
-DIA_OWPAL_4_EXIT.description = DIALOG_ENDE;
-DIA_OWPAL_4_STANDARD.description = "";
-DIA_PAL_12_EXIT.description = DIALOG_ENDE;
-DIA_PAL_12_JOIN.description = "Ich will ein Paladin werden!";
-DIA_PAL_12_PEOPLE.description = "Wer hat hier das Kommando?";
-DIA_PAL_12_LOCATION.description = "Was macht ihr Paladine hier in Khorinis?";
-DIA_PAL_12_STANDARD.description = "Wie ist die Lage?";
-DIA_PAL_4_EXIT.description = DIALOG_ENDE;
-DIA_PAL_4_JOIN.description = "Wie werde ich Paladin?";
-DIA_PAL_4_PEOPLE.description = "Wer hat hier das Kommando?";
-DIA_PAL_4_LOCATION.description = "Was macht ihr Paladine hier in Khorinis?";
-DIA_PAL_4_STANDARD.description = "Was gibt's Neues?";
-DIA_PAL_9_EXIT.description = DIALOG_ENDE;
-DIA_PAL_9_JOIN.description = "Wie kann ich Paladin werden?";
-DIA_PAL_9_PEOPLE.description = "Wer hat hier das Kommando?";
-DIA_PAL_9_LOCATION.description = "Warum seid ihr Paladine nach Khorinis gekommen?";
-DIA_PAL_9_STANDARD.description = "Wie sieht's aus?";
-DIA_SLD_6_EXIT.description = DIALOG_ENDE;
-DIA_SLD_6_JOIN.description = "Ich will mich euch anschlie?en!";
-DIA_SLD_6_PEOPLE.description = "Wer hat hier das Sagen?";
-DIA_SLD_6_LOCATION.description = "Bewacht ihr die Bauern?";
-DIA_SLD_6_STANDARD.description = "Wie sieht's aus?";
-DIA_SLD_7_EXIT.description = DIALOG_ENDE;
-DIA_SLD_7_JOIN.description = "Ich will mich euch anschlie?en!";
-DIA_SLD_7_PEOPLE.description = "Wer hat hier das Sagen?";
-DIA_SLD_7_LOCATION.description = "Erz?hl mir was ?ber den Hof.";
-DIA_SLD_7_STANDARD.description = "Was gibt's Neues?";
-DIA_STRF_1_EXIT.description = DIALOG_ENDE;
-DIA_STRF_1_STANDARD.description = "";
-DIA_STRF_13_EXIT.description = DIALOG_ENDE;
-DIA_STRF_13_STANDARD.description = "";
-DIA_VLK_1_EXIT.description = DIALOG_ENDE;
-DIA_VLK_1_JOIN.description = "Wie kann ich B?rger dieser Stadt werden?";
-DIA_VLK_1_PEOPLE.description = "Wer sind hier die wichtigen Pers?nlichkeiten?";
-DIA_VLK_1_LOCATION.description = "Was gibt es interessantes in dieser Stadt?";
-DIA_VLK_1_STANDARD.description = "Was gibt's Neues?";
-DIA_VLK_16_EXIT.description = DIALOG_ENDE;
-DIA_VLK_16_JOIN.description = "Ich will B?rger dieser Stadt werden!";
-DIA_VLK_16_PEOPLE.description = "Wer sind die wichtigen Pers?nlichkeiten dieser Stadt?";
-DIA_VLK_16_LOCATION.description = "Was gibt hier Interessantes zu sehen?";
-DIA_VLK_16_STANDARD.description = "Was gibt's Neues?";
-DIA_VLK_17_EXIT.description = DIALOG_ENDE;
-DIA_VLK_17_JOIN.description = "Was muss ich tun, um B?rger dieser Stadt zu werden?";
-DIA_VLK_17_PEOPLE.description = "Wer sind die wichtigsten Pers?nlichkeiten dieser Stadt?";
-DIA_VLK_17_LOCATION.description = "Was sind die interessantesten Orte hier in Khorinis?";
-DIA_VLK_17_STANDARD.description = "Was gibt's Neues?";
-DIA_VLK_6_EXIT.description = DIALOG_ENDE;
-DIA_VLK_6_JOIN.description = "Wie werde ich B?rger dieser Stadt?";
-DIA_VLK_6_PEOPLE.description = "Wer sind die einflussreichen B?rger von Khorinis?";
-DIA_VLK_6_LOCATION.description = "Woran kann ich mich hier in der Stadt am besten orientieren?";
-DIA_VLK_6_STANDARD.description = "Was gibt's Neues?";
-DIA_VLK_8_EXIT.description = DIALOG_ENDE;
-DIA_VLK_8_JOIN.description = "Ich will B?rger dieser Stadt werden!";
-DIA_VLK_8_PEOPLE.description = "Wer sind die wichtigsten B?rger dieser Stadt?";
-DIA_VLK_8_LOCATION.description = "Was gibt es hier interessantes zu sehen?";
-DIA_VLK_8_STANDARD.description = "Was gibt's Neues?";
-DIA_Ambient_NEWS.description = "";
-dia_cityguide.description = "Kannst du mir helfen, mich hier zurechtzufinden?";
-DIA_AmbientDementor_EXIT.description = DIALOG_ENDE;
-DIA_AmbientDementor.description = "";
-DIA_Dragon_Fire_Exit.description = DIALOG_ENDE;
-DIA_Dragon_Fire_Hello.description = "";
-DIA_Dragon_Fire_WerBistDu.description = "Wer bist du?";
-DIA_Dragon_Fire_HORT.description = "Wo ist dein Hort?";
-DIA_Dragon_Ice_Exit.description = DIALOG_ENDE;
-DIA_Dragon_Ice_Hello.description = "";
-DIA_Dragon_Ice_WERBISTDU.description = "Wer bist du?";
-DIA_Dragon_Ice_BELIAR.description = "Welchem Gott dient ihr?";
-DIA_DragonTalk_Main_1.description = "Warum bist du hier erschienen?";
-DIA_DragonTalk_Main_2.description = "Wer hat euch hierher entsandt?";
-DIA_DragonTalk_Main_3.description = "Wie kann ich euren Meister bezwingen?";
-DIA_DragonTalk_Main_4.description = "Wie kann ich euren Meister finden?";
-DIA_Dragon_Rock_Exit.description = DIALOG_ENDE;
-DIA_Dragon_Rock_Hello.description = "";
-DIA_Dragon_Rock_WERBISTDU.description = "Wer bist du?";
-DIA_Dragon_Rock_HIERARCHIE.description = "Wer von euch Drachen ist der St?rkste?";
-DIA_Dragon_Swamp_Exit.description = DIALOG_ENDE;
-DIA_Dragon_Swamp_Hello.description = "";
-DIA_Dragon_Swamp_WERBISTDU.description = "Wer bist du?";
-DIA_Dragon_Swamp_WOSINDDIEANDEREN.description = "Wo finde ich den Rest von euch widerlichen Kreaturen?";
-DIA_ToughGuy_NEWS.description = "";
-DIA_BDT_1031_Fluechtling_EXIT.description = DIALOG_ENDE;
-DIA_BDT_1031_Fluechtling_Tip1.description = "";
-DIA_BDT_1031_Fluechtling_PERM.description = "";
-DIA_BDT_1032_Fluechtling_EXIT.description = DIALOG_ENDE;
-DIA_BDT_1032_Fluechtling_PERM.description = "";
-DIA_BDT_1033_Fluechtling_EXIT.description = DIALOG_ENDE;
-DIA_BDT_1033_Fluechtling_Tip2.description = "";
-DIA_BDT_1033_Fluechtling_PERM.description = "";
-DIA_BDT_1034_Fluechtling_EXIT.description = DIALOG_ENDE;
-DIA_BDT_1034_Fluechtling_PERM.description = "";
-DIA_BDT_1035_Fluechtling_EXIT.description = DIALOG_ENDE;
-DIA_BDT_1035_Fluechtling_PERM.description = "";
-DIA_Dragon_Fire_Island_Exit.description = DIALOG_ENDE;
-DIA_Dragon_Fire_Island_Hello.description = "";
-DIA_Liesel_EXIT.description = DIALOG_ENDE;
-DIA_Liesel_Hallo.description = "Hallo!";
-DIA_Liesel_KommMit.description = "Komm mit!";
-DIA_Liesel_WarteHier.description = "Warte hier!";
-DIA_Urshak_EXIT.description = DIALOG_ENDE;
-DIA_Urshak_HALLO.description = "";
-DIA_Urshak_WASMACHENORKS.description = "Warum greifen die Orks die Menschen an?";
-DIA_Urshak_SOVIELE.description = "Warum seid ihr auf einmal so viele?";
-DIA_Urshak_ZAUN.description = "Was verbirgt sich hinter dem langen Orkzaun im Osten?";
-DIA_Urshak_WASHASTDUVOR.description = "Was hast du jetzt vor?";
-DIA_Urshak_HOSHPAKDEAD.description = "Hosh-Pak ist tot.";
+	DIA_AkilsSchaf_KommMit.description = "Komm mit!";
+	DIA_BAU_1_EXIT.description = 	DIAlog_Ende;
+	DIA_BAU_1_JOIN.description = "Ich will mehr über die Söldner wissen.";
+	DIA_BAU_1_PEOPLE.description = "Wer hat hier das Sagen?";
+	DIA_BAU_1_LOCATION.description = "Was gibt es so alles es hier in der Gegend?";
+	DIA_BAU_1_STANDARD.description = "Was gibt's Neues?";
+	DIA_BAU_13_EXIT.description = 	DIAlog_Ende;
+	DIA_BAU_13_JOIN.description = "Ich will mehr über die Söldner wissen!";
+	DIA_BAU_13_PEOPLE.description = "Wer hat hier das Sagen?";
+	DIA_BAU_13_LOCATION.description = "Was kannst du mir über die Gegend hier erzählen?";
+	DIA_BAU_13_STANDARD.description = "Was gibt's Neues?";
+	DIA_BAU_16_EXIT.description = 	DIAlog_Ende;
+	DIA_BAU_16_JOIN.description = "Ich will mehr über die Söldner wissen!";
+	DIA_BAU_16_PEOPLE.description = "Wer hat hier das Sagen?";
+	DIA_BAU_16_LOCATION.description = "Was kannst du mir über die Gegend hier erzählen?";
+	DIA_BAU_16_STANDARD.description = "Was gibt's Neues?";
+	DIA_BAU_7_EXIT.description = 	DIAlog_Ende;
+	DIA_BAU_7_JOIN.description = "Was weißt du über die Söldner?";
+	DIA_BAU_7_PEOPLE.description = "Wer hat hier das Sagen?";
+	DIA_BAU_7_LOCATION.description = "Erzähl mir mehr über die Gegend.";
+	DIA_BAU_7_STANDARD.description = "Was gibt's Neues?";
+	DIA_BDT_1_EXIT.description = 	DIAlog_Ende;
+	DIA_BDT_13_EXIT.description = 	DIAlog_Ende;
+	DIA_MIL_6_EXIT.description = 	DIAlog_Ende;
+	DIA_MIL_6_JOIN.description = "Was muß ich tun, um mich der Miliz anzuschließen?";
+	DIA_MIL_6_PEOPLE.description = "Erzähl mir etwas über die Paladine.";
+	DIA_MIL_6_LOCATION.description = "Was gibt es über diese Stadt zu wissen?";
+	DIA_MIL_6_STANDARD.description = "Was gibt's Neues?";
+	DIA_MIL_7_EXIT.description = 	DIAlog_Ende;
+	DIA_MIL_7_JOIN.description = "Ich will der Miliz beitreten!";
+	DIA_MIL_7_PEOPLE.description = "Was weißt du über die Paladine?";
+	DIA_MIL_7_LOCATION.description = "Was habe ich hier in der Stadt für Möglichkeiten?";
+	DIA_MIL_7_STANDARD.description = "Was gibt's Neues?";
+	DIA_NOV_3_EXIT.description = 	DIAlog_Ende;
+	DIA_NOV_3_Fegen.description = "Ich brauche Hilfe beim Fegen der Novizenkammern.";
+	DIA_NOV_3_Wurst.description = "Willst du 'ne Wurst?";
+	DIA_NOV_3_JOIN.description = "Ich will ein Magier werden!";
+	DIA_NOV_3_PEOPLE.description = "Wer führt dieses Kloster?";
+	DIA_NOV_3_LOCATION.description = "Was kannst du mir über dieses Kloster erzählen?";
+	DIA_NOV_3_STANDARD.description = "Was gibt's Neues?";
+	DIA_NOV_8_EXIT.description = 	DIAlog_Ende;
+	DIA_NOV_8_Fegen.description = "Ich brauche Hilfe beim Fegen der Novizenkammern.";
+	DIA_NOV_8_Wurst.description = "Wie wär's mit 'ner leckeren Schafswurst?";
+	DIA_NOV_8_JOIN.description = "Was muß ich tun, um Magier zu werden?";
+	DIA_NOV_8_PEOPLE.description = "Wer leitet das Kloster?";
+	DIA_NOV_8_LOCATION.description = "Erzähl mir etwas über dieses Kloster.";
+	DIA_NOV_8_STANDARD.description = "Gibt's irgendwelche Neuigkeiten?";
+	DIA_OCPAL_4_EXIT.description = 	DIAlog_Ende;
+	DIA_OCPAL_4_PEOPLE.description = "Wer hat hier das Kommando?";
+	DIA_OCPAL_4_LOCATION.description = "Was kannst du mir über das Minental erzählen?";
+	DIA_OCPAL_4_STANDARD.description = "Wie ist die Lage?";
+	DIA_OCPAL_9_EXIT.description = 	DIAlog_Ende;
+	DIA_OCPAL_9_PEOPLE.description = "Wer hat hier das Kommando?";
+	DIA_OCPAL_9_LOCATION.description = "Was weißt du über dieses Tal?";
+	DIA_OCPAL_9_STANDARD.description = "Wie ist die Lage?";
+	DIA_OCVLK_1_EXIT.description = 	DIAlog_Ende;
+	DIA_OCVLK_1_PEOPLE.description = "Wer hat hier das Kommando?";
+	DIA_OCVLK_1_LOCATION.description = "Was weißt du über das Minental?";
+	DIA_OCVLK_1_STANDARD.description = "Wie ist die Lage?";
+	DIA_OCVLK_6_EXIT.description = 	DIAlog_Ende;
+	DIA_OCVLK_6_PEOPLE.description = "Wer hat hier das Sagen?";
+	DIA_OCVLK_6_LOCATION.description = "Was kannst du mir über die Lage im Minental sagen?";
+	DIA_OCVLK_6_STANDARD.description = "Wie steht's?";
+	DIA_OUT_1_EXIT.description = 	DIAlog_Ende;
+	DIA_OUT_13_EXIT.description = 	DIAlog_Ende;
+	DIA_OUT_7_EXIT.description = 	DIAlog_Ende;
+	DIA_OWPAL_4_EXIT.description = 	DIAlog_Ende;
+	DIA_PAL_12_EXIT.description = 	DIAlog_Ende;
+	DIA_PAL_12_JOIN.description = "Ich will ein Paladin werden!";
+	DIA_PAL_12_PEOPLE.description = "Wer hat hier das Kommando?";
+	DIA_PAL_12_LOCATION.description = "Was macht ihr Paladine hier in Khorinis?";
+	DIA_PAL_12_STANDARD.description = "Wie ist die Lage?";
+	DIA_PAL_4_EXIT.description = 	DIAlog_Ende;
+	DIA_PAL_4_JOIN.description = "Wie werde ich Paladin?";
+	DIA_PAL_4_PEOPLE.description = "Wer hat hier das Kommando?";
+	DIA_PAL_4_LOCATION.description = "Was macht ihr Paladine hier in Khorinis?";
+	DIA_PAL_4_STANDARD.description = "Was gibt's Neues?";
+	DIA_PAL_9_EXIT.description = 	DIAlog_Ende;
+	DIA_PAL_9_JOIN.description = "Wie kann ich Paladin werden?";
+	DIA_PAL_9_PEOPLE.description = "Wer hat hier das Kommando?";
+	DIA_PAL_9_LOCATION.description = "Warum seid ihr Paladine nach Khorinis gekommen?";
+	DIA_PAL_9_STANDARD.description = "Wie sieht's aus?";
+	DIA_SLD_6_EXIT.description = 	DIAlog_Ende;
+	DIA_SLD_6_JOIN.description = "Ich will mich euch anschließen!";
+	DIA_SLD_6_PEOPLE.description = "Wer hat hier das Sagen?";
+	DIA_SLD_6_LOCATION.description = "Bewacht ihr die Bauern?";
+	DIA_SLD_6_STANDARD.description = "Wie sieht's aus?";
+	DIA_SLD_7_EXIT.description = 	DIAlog_Ende;
+	DIA_SLD_7_JOIN.description = "Ich will mich euch anschließen!";
+	DIA_SLD_7_PEOPLE.description = "Wer hat hier das Sagen?";
+	DIA_SLD_7_LOCATION.description = "Erzähl mir was über den Hof.";
+	DIA_SLD_7_STANDARD.description = "Was gibt's Neues?";
+	DIA_STRF_1_EXIT.description = 	DIAlog_Ende;
+	DIA_STRF_13_EXIT.description = 	DIAlog_Ende;
+	DIA_VLK_1_EXIT.description = 	DIAlog_Ende;
+	DIA_VLK_1_JOIN.description = "Wie kann ich Bürger dieser Stadt werden?";
+	DIA_VLK_1_PEOPLE.description = "Wer sind hier die wichtigen Persönlichkeiten?";
+	DIA_VLK_1_LOCATION.description = "Was gibt es interessantes in dieser Stadt?";
+	DIA_VLK_1_STANDARD.description = "Was gibt's Neues?";
+	DIA_VLK_16_EXIT.description = 	DIAlog_Ende;
+	DIA_VLK_16_JOIN.description = "Ich will Bürger dieser Stadt werden!";
+	DIA_VLK_16_PEOPLE.description = "Wer sind die wichtigen Persönlichkeiten dieser Stadt?";
+	DIA_VLK_16_LOCATION.description = "Was gibt hier Interessantes zu sehen?";
+	DIA_VLK_16_STANDARD.description = "Was gibt's Neues?";
+	DIA_VLK_17_EXIT.description = 	DIAlog_Ende;
+	DIA_VLK_17_JOIN.description = "Was muss ich tun, um Bürger dieser Stadt zu werden?";
+	DIA_VLK_17_PEOPLE.description = "Wer sind die wichtigsten Persönlichkeiten dieser Stadt?";
+	DIA_VLK_17_LOCATION.description = "Was sind die interessantesten Orte hier in Khorinis?";
+	DIA_VLK_17_STANDARD.description = "Was gibt's Neues?";
+	DIA_VLK_6_EXIT.description = 	DIAlog_Ende;
+	DIA_VLK_6_JOIN.description = "Wie werde ich Bürger dieser Stadt?";
+	DIA_VLK_6_PEOPLE.description = "Wer sind die einflussreichen Bürger von Khorinis?";
+	DIA_VLK_6_LOCATION.description = "Woran kann ich mich hier in der Stadt am besten orientieren?";
+	DIA_VLK_6_STANDARD.description = "Was gibt's Neues?";
+	DIA_VLK_8_EXIT.description = 	DIAlog_Ende;
+	DIA_VLK_8_JOIN.description = "Ich will Bürger dieser Stadt werden!";
+	DIA_VLK_8_PEOPLE.description = "Wer sind die wichtigsten Bürger dieser Stadt?";
+	DIA_VLK_8_LOCATION.description = "Was gibt es hier interessantes zu sehen?";
+	DIA_VLK_8_STANDARD.description = "Was gibt's Neues?";
+	DIA_cityguide.description = "Kannst du mir helfen, mich hier zurechtzufinden?";
+	DIA_AmbientDementor_EXIT.description = 	DIAlog_Ende;
+	DIA_Dragon_Fire_Exit.description = 	DIAlog_Ende;
+	DIA_Dragon_Fire_WerBistDu.description = "Wer bist du?";
+	DIA_Dragon_Fire_HORT.description = "Wo ist dein Hort?";
+	DIA_Dragon_Ice_Exit.description = 	DIAlog_Ende;
+	DIA_Dragon_Ice_WERBISTDU.description = "Wer bist du?";
+	DIA_Dragon_Ice_BELIAR.description = "Welchem Gott dient ihr?";
+	DIA_DragonTalk_Main_1.description = "Warum bist du hier erschienen?";
+	DIA_DragonTalk_Main_2.description = "Wer hat euch hierher entsandt?";
+	DIA_DragonTalk_Main_3.description = "Wie kann ich euren Meister bezwingen?";
+	DIA_DragonTalk_Main_4.description = "Wie kann ich euren Meister finden?";
+	DIA_Dragon_Rock_Exit.description = 	DIAlog_Ende;
+	DIA_Dragon_Rock_WERBISTDU.description = "Wer bist du?";
+	DIA_Dragon_Rock_HIERARCHIE.description = "Wer von euch Drachen ist der Stärkste?";
+	DIA_Dragon_Swamp_Exit.description = 	DIAlog_Ende;
+	DIA_Dragon_Swamp_WERBISTDU.description = "Wer bist du?";
+	DIA_Dragon_Swamp_WOSINDDIEANDEREN.description = "Wo finde ich den Rest von euch widerlichen Kreaturen?";
+	DIA_BDT_1031_Fluechtling_EXIT.description = 	DIAlog_Ende;
+	DIA_BDT_1032_Fluechtling_EXIT.description = 	DIAlog_Ende;
+	DIA_BDT_1033_Fluechtling_EXIT.description = 	DIAlog_Ende;
+	DIA_BDT_1034_Fluechtling_EXIT.description = 	DIAlog_Ende;
+	DIA_BDT_1035_Fluechtling_EXIT.description = 	DIAlog_Ende;
+	DIA_Dragon_Fire_Island_Exit.description = 	DIAlog_Ende;
+	DIA_Liesel_EXIT.description = 	DIAlog_Ende;
+	DIA_Liesel_Hallo.description = "Hallo!";
+	DIA_Liesel_KommMit.description = "Komm mit!";
+	DIA_Liesel_WarteHier.description = "Warte hier!";
+	DIA_Urshak_EXIT.description = 	DIAlog_Ende;
+	DIA_Urshak_WASMACHENORKS.description = "Warum greifen die Orks die Menschen an?";
+	DIA_Urshak_SOVIELE.description = "Warum seid ihr auf einmal so viele?";
+	DIA_Urshak_ZAUN.description = "Was verbirgt sich hinter dem langen Orkzaun im Osten?";
+	DIA_Urshak_WASHASTDUVOR.description = "Was hast du jetzt vor?";
+	DIA_Urshak_HOSHPAKDEAD.description = "Hosh-Pak ist tot.";
 
 
-PC_MakeRune_End.description = DIALOG_ENDE;
-
-PC_Circle_01.description = "Runen Kreis 1 erschaffen";
-
-PC_Circle_02.description = "Runen Kreis 2 erschaffen";
-
-PC_Circle_03.description = "Runen Kreis 3 erschaffen";
-
-PC_Circle_04.description = "Runen Kreis 4 erschaffen";
-
-PC_Circle_05.description = "Runen Kreis 5 erschaffen";
-
-PC_Circle_06.description = "Runen Kreis 6 erschaffen";
-
-PC_SPL_MasterOfDisaster.description = "Das Geheimnis der Bibliothek!";
-
-PC_SPL_PalTeleportSecret.description = "Teleportrune erschaffen";
-
-PC_PotionAlchemy_End.description = DIALOG_ENDE;
-
-PC_Charge_InnosEye.description = "Das Auge Innos wieder aufladen.";
-
-PC_ItPo_Mana_01.description = "Mana Essenz (2 Feuernesseln, 1 Feldkn?terich)";
-
-PC_ItPo_Mana_02.description = "Mana Extrakt (2 Feuerkraut, 1 Feldkn?terich) ";
-
-PC_ItPo_Mana_03.description = "Mana Elixier (2 Feuerwurzeln, 1 Feldkn?terich)";
-
-PC_ItPo_Health_01.description = "Essenz der Heilung (2 Heilplanzen, 1 Feldkn?terich)";
-
-PC_ItPo_Health_02.description = "Extrakt der Heilung (2 Heilkr?uter, 1 Feldkn?terich)";
-
-PC_ItPo_Health_03.description = "Elixier der Heilung (2 Heilwurzeln, 1 Feldkn?terich)";
-
-PC_ItPo_Perm_Health.description = "Elixier des Lebens (1 Heilwurzel, 1 Kronst?ckel)";
-
-PC_ItPo_Perm_Mana.description = "Elixier des Geistes (1 Feuerwurzel, 1 Kronst?ckl)";
-
-PC_ItPo_Dex.description = "Trank des Geschicks (1 Goblin Beere, 1 Kronst?ckl)";
-
-PC_ItPo_Strg.description = "Trank der St?rke (1 Drachenwurzel, 1 Kronst?ckl)";
-
-PC_ItPo_Speed.description = "Trank der Geschwindigkeit (1 Snapperkraut, 1 Feldkn?terich)";
-
-PC_ItMi_Joint.description = "Sumpfkraut verarbeiten (1 Stengel)";
-
-PC_ItMi_Tabak.description = "Tabak mischen...";
-
-PC_ItPo_MegaDrink.description = "Dracheneitrunk (10 Drachenei, 1 schwarze Perle, 1 Schwefel)";
-
-PC_PrayShrine_HEALSHRINE.description = "Schrein reinigen";
-
-PC_PrayShrine_End.description = DIALOG_ENDE;
-
-PC_PrayShrine_Paladine.description = "Ein Gebet f?r die Paladine sprechen.";
-
-PC_PrayShrine_Pray.description = "Beten";
-
-PC_NoSleep.description = DIALOG_ENDE;
-
-PC_SleepTime_Morning.description = "Bis zum n?chsten Morgen schlafen";
-
-PC_SleepTime_Noon.description = "Bis Mittags schlafen";
-
-PC_SleepTime_Evening.description = "Bis zum n?chsten Abend schlafen";
-
-PC_SleepTime_Midnight.description = "Bis Mitternacht schlafen";
-
-PC_SmithWeapon_End.description = DIALOG_ENDE;
+//**********************************
+//
+//	 Dialog_Mobsis
+//
+//***********************************
+	PC_MakeRune_End.description = Dialog_Ende;
+	PC_Circle_01.description = "Runen Kreis 1 erschaffen";
+	PC_Circle_02.description = "Runen Kreis 2 erschaffen";
+	PC_Circle_03.description = "Runen Kreis 3 erschaffen";
+	PC_Circle_04.description = "Runen Kreis 4 erschaffen";
+	PC_Circle_05.description = "Runen Kreis 5 erschaffen";
+	PC_Circle_06.description = "Runen Kreis 6 erschaffen";
+	PC_SPL_MasterOfDisaster.description = "Das Geheimnis der Bibliothek!";
+	PC_SPL_PalTeleportSecret.description = "Teleportrune erschaffen";
+	PC_PotionAlchemy_End.description = Dialog_Ende;
+	PC_Charge_InnosEye.description = "Das Auge Innos wieder aufladen.";
+	PC_ItPo_Mana_01.description = "Mana Essenz (2 Feuernesseln, 1 Feldknöterich)";
+	PC_ItPo_Mana_02.description = "Mana Extrakt (2 Feuerkraut, 1 Feldknöterich) ";
+	PC_ItPo_Mana_03.description = "Mana Elixier (2 Feuerwurzeln, 1 Feldknöterich)";
+	PC_ItPo_Health_01.description = "Essenz der Heilung (2 Heilplanzen, 1 Feldknöterich)";
+	PC_ItPo_Health_02.description = "Extrakt der Heilung (2 Heilkräuter, 1 Feldknöterich)";
+	PC_ItPo_Health_03.description = "Elixier der Heilung (2 Heilwurzeln, 1 Feldknöterich)";
+	PC_ItPo_Perm_Health.description = "Elixier des Lebens (1 Heilwurzel, 1 Kronstöckel)";
+	PC_ItPo_Perm_Mana.description = "Elixier des Geistes (1 Feuerwurzel, 1 Kronstöckl)";
+	PC_ItPo_Dex.description = "Trank des Geschicks (1 Goblin Beere, 1 Kronstöckl)";
+	PC_ItPo_Strg.description = "Trank der Stärke (1 Drachenwurzel, 1 Kronstöckl)";
+	PC_ItPo_Speed.description = "Trank der Geschwindigkeit (1 Snapperkraut, 1 Feldknöterich)";
+	PC_ItMi_Joint.description = "Sumpfkraut verarbeiten (1 Stengel)";
+	PC_ItMi_Tabak.description = "Tabak mischen...";
+	PC_ItPo_MegaDrink.description = "Dracheneitrunk (10 Drachenei, 1 schwarze Perle, 1 Schwefel)";
+	PC_PrayShrine_HEALSHRINE.description = "Schrein reinigen";
+	PC_PrayShrine_End.description = Dialog_Ende;
+	PC_PrayShrine_Paladine.description = "Ein Gebet für die Paladine sprechen.";
+	PC_PrayShrine_Pray.description = "Beten";
+	PC_PrayShrine_BlessSword.description = Bless_Sword;
+	PC_PrayShrine_BlessSword_Final.description = Bless_Sword2;
+	PC_NoSleep.description = Dialog_Ende;
+	PC_SleepTime_Morning.description = "Bis zum nächsten Morgen schlafen";
+	PC_SleepTime_Noon.description = "Bis Mittags schlafen";
+	PC_SleepTime_Evening.description = "Bis zum nächsten Abend schlafen";
+	PC_SleepTime_Midnight.description = "Bis Mitternacht schlafen";
+	PC_SmithWeapon_End.description = Dialog_Ende;
 };
