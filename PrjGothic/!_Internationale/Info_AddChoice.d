@@ -984,6 +984,6 @@ var string 	dia_bdt_1033_fluechtling_tip2_morgahard_description	;
 var string 	dia_bdt_1033_fluechtling_tip2_frei_verbrechen_description	;
 var string 	dia_urshak_hallo_freund_description	;
 var string 	dia_urshak_hallo_wer_description	;
-var string 	DIALOG_BACK	;
+//var string 	DIALOG_BACK	;
 var string 	dia_urshak_washastduvor__description	;
 var string 	dia_urshak_washastduvor_hoshpak_description	;
