@@ -1,5 +1,208 @@
 func void DE_text()
 {
+
+
+TXT_GUILDS[0] ="Gildenlos";
+TXT_GUILDS[1] ="Paladin";
+TXT_GUILDS[2] ="Miliz";
+TXT_GUILDS[3] ="Bürger";
+TXT_GUILDS[4] ="Magier";
+TXT_GUILDS[5] ="Novize";
+TXT_GUILDS[6] ="Drachenjäger";
+TXT_GUILDS[7] ="Söldner";
+TXT_GUILDS[8] ="Bauer";
+TXT_GUILDS[9] ="Bandit";
+TXT_GUILDS[10] ="Sträfling";
+TXT_GUILDS[11] ="Suchender";
+TXT_GUILDS[12] ="Landbewohner";
+TXT_GUILDS[13] ="B";
+TXT_GUILDS[14] ="C";
+TXT_GUILDS[15] ="D";
+TXT_GUILDS[16] ="";
+TXT_GUILDS[17] ="Fleischwanze";
+TXT_GUILDS[18] ="Schaf";
+TXT_GUILDS[19] ="Goblin";
+TXT_GUILDS[20] ="Goblin Skelett";
+TXT_GUILDS[21] ="B. Goblin Skelett";
+TXT_GUILDS[22] ="Scavenger";
+TXT_GUILDS[23] ="Riesenratte";
+TXT_GUILDS[24] ="Feldräuber";
+TXT_GUILDS[25] ="Blutfliege";
+TXT_GUILDS[26] ="Waran";
+TXT_GUILDS[27] ="Wolf";
+TXT_GUILDS[28] ="B. Wolf";
+TXT_GUILDS[29] ="Minecrawler";
+TXT_GUILDS[30] ="Lurker";
+TXT_GUILDS[31] ="Skelett";
+TXT_GUILDS[32] ="B. Skelett";
+TXT_GUILDS[33] ="Skelett-Magier";
+TXT_GUILDS[34] ="Zombie";
+TXT_GUILDS[35] ="Snapper";
+TXT_GUILDS[36] ="Schattenläufer";
+TXT_GUILDS[37] ="Skelettmonster";
+TXT_GUILDS[38] ="Harpie";
+TXT_GUILDS[39] ="Steingolem";
+TXT_GUILDS[40] ="Feuergolem";
+TXT_GUILDS[41] ="Eisgolem";
+TXT_GUILDS[42] ="B. Golem";
+TXT_GUILDS[43] ="Dämon";
+TXT_GUILDS[44] ="B. Dämon";
+TXT_GUILDS[45] ="Troll";
+TXT_GUILDS[46] ="Sumpfhai";
+TXT_GUILDS[47] ="Drache";
+TXT_GUILDS[48] ="Drache";
+TXT_GUILDS[49] ="M";
+TXT_GUILDS[50] ="N";
+TXT_GUILDS[51] ="O";
+TXT_GUILDS[52] ="P";
+TXT_GUILDS[53] ="Q";
+TXT_GUILDS[54] ="";
+TXT_GUILDS[55] ="Ork";
+TXT_GUILDS[56] ="Ork";
+TXT_GUILDS[57] ="Untoter Ork";
+TXT_GUILDS[58] ="Drakonier";
+TXT_GUILDS[59] ="X";
+TXT_GUILDS[60] ="Y";
+TXT_GUILDS[61] ="Z";
+TXT_GUILDS[62] ="";
+
+
+	TXT_TALENTS[0] = "";
+	TXT_TALENTS[1] = "Einhänder";
+	TXT_TALENTS[2] = "Zweihänder";
+	TXT_TALENTS[3] = "Bogen";
+	TXT_TALENTS[4] = "Armbrust";
+	TXT_TALENTS[5] = "Schlösser öffnen";
+	TXT_TALENTS[6] = "";
+	TXT_TALENTS[7] = "Magie";
+	TXT_TALENTS[8] = "Schleichen";
+	TXT_TALENTS[9] = "";
+	TXT_TALENTS[10] = "";
+	TXT_TALENTS[11] = "Akrobatik";
+	TXT_TALENTS[12] = "Taschendiebstahl";
+	TXT_TALENTS[13] = "Schmieden";
+	TXT_TALENTS[14] = "Runen erschaffen";
+	TXT_TALENTS[15] = "Alchemie";
+	TXT_TALENTS[16] = "Tiere ausweiden";
+	TXT_TALENTS[17] = "";
+	TXT_TALENTS[18] = "";
+	TXT_TALENTS[19] = "";
+	TXT_TALENTS[20] = "";
+	TXT_TALENTS[21] = "";
+
+	TXT_TALENTS_SKILLS[0] = "";
+	TXT_TALENTS_SKILLS[1] = "Anfänger|Kämpfer|Meister";
+	TXT_TALENTS_SKILLS[2] = "Anfänger|Kämpfer|Meister";
+	TXT_TALENTS_SKILLS[3] = "Anfänger|Schütze|Meister";
+	TXT_TALENTS_SKILLS[4] = "Anfänger|Schütze|Meister";
+	TXT_TALENTS_SKILLS[5] = "-|Gelernt|-";
+	TXT_TALENTS_SKILLS[6] = "0|1|2";
+	//TXT_TALENTS_SKILLS[7] = "0|1|2|3|4|5|6";
+	TXT_TALENTS_SKILLS[7] = "nein|1.Kreis|2.Kreis|3.Kreis|4.Kreis|5.Kreis|6.Kreis"; //NPC_TALENT_MAGE         
+	TXT_TALENTS_SKILLS[8] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[9] = "-|-";
+	TXT_TALENTS_SKILLS[10] = "-|-";
+	TXT_TALENTS_SKILLS[11] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[12] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[13] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[14] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[15] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[16] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[17] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[18] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[19] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[20] = "-|Gelernt";
+	TXT_TALENTS_SKILLS[21] = "-|Gelernt";
+	
+/*
+TXT_INV_CAT[9] =
+{
+	"",
+	"Waffen",
+	"Rüstungen",
+	"Magie",
+	"Artefakte",
+	"Nahrung",
+	"Tränke",
+	"Schriften",
+	"Verschiedenes"
+};*/
+
+
+
+/*
+TXT_SPELLS[68] =
+{
+	"Heiliges Licht",
+	"Kleine Wundheilung",
+	"Heiliger Pfeil",
+	"Mittlere Wundheilung",
+	"Böses Vertreiben",
+	"Grosse Wundheilung",
+	"Böses Vernichten",
+	"Teleport",
+	"Zur Hafenstadt",
+	"Zum Kloster",
+	"Zum Grossbauern",
+	"Zu Xardas",
+	"Zum Pass in Khorinis",
+	"Zum Pass im Minental",
+	"Zur Burg",
+	"Zum alten Dämonenturm",
+	"Zur Taverne",
+	"T3",
+	"Licht",
+	"Feuerpfeil",
+	"Eispfeil",
+	"leichte Wunden heilen",
+	"Goblin Skelett",
+	"Feuerball",
+	"Blitz",
+	"Wolf rufen",
+	"Windfaust",
+	"Schlaf",
+	"mittlere Wunden heilen",
+	"Blitzschlag",
+	"Grosser Feuerball",
+	"Skelett",
+	"Angst",
+	"Eisblock",
+	"Kugelblitz",
+	"Golem erschaffen",
+	"Untote vernichten",
+	"Grosser Feuersturm",
+	"Kleiner Feuersturm",
+	"Eiswelle",
+	"Dämon",
+	"Vollheilung",
+	"Feuerregen",
+	"Todeshauch",
+	"Massensterben",
+	"Armee der Finsternis",
+	"Schrumpfen",
+	"Schaf",
+	"Scavenger",
+	"Riesenratte",
+	"Feldräuber",
+	"Wolf",
+	"Waran",
+	"Snapper",
+	"Warg",
+	"Feuerwaran",
+	"Lurker",
+	"Shadowbeast",
+	"Dragon Snapper",
+	"Vergessen",
+	"Heiliges Geschoss",
+	"B",
+	"C",
+	"D",
+	"E",
+	"F",
+	"G",
+	"H"
+};*/
+
 MOBNAME_CRATE = "Kiste";
 MOBNAME_CHEST = "Truhe";
 MOBNAME_BED = "Bett";
@@ -113,144 +316,9 @@ MOBNAME_GRAVE_30 = "Graf Lazar von Siegburg 156 - 212";
 MOBNAME_GRAVE_31 = "Schwertträger Asub Ukara 145 - 212";
 MOBNAME_GRAVE_32 = "Schwertträger Dietmar Ukara 112 - 212";
 MOBNAME_GRAVE_33 = "Ehrengardist Uthar Seranis 178 - 212";
-/*
-TXT_GUILDS[62] =
-{
-	"Gildenlos",
-	"Paladin",
-	"Miliz",
-	"Bürger",
-	"Magier",
-	"Novize",
-	"Drachenjäger",
-	"Söldner",
-	"Bauer",
-	"Bandit",
-	"Sträfling",
-	"Suchender",
-	"Landbewohner",
-	"B",
-	"C",
-	"D",
-	"",
-	"Fleischwanze",
-	"Schaf",
-	"Goblin",
-	"Goblin Skelett",
-	"B. Goblin Skelett",
-	"Scavenger",
-	"Riesenratte",
-	"Feldräuber",
-	"Blutfliege",
-	"Waran",
-	"Wolf",
-	"B. Wolf",
-	"Minecrawler",
-	"Lurker",
-	"Skelett",
-	"B. Skelett",
-	"Skelett-Magier",
-	"Zombie",
-	"Snapper",
-	"Schattenläufer",
-	"Skelettmonster",
-	"Harpie",
-	"Steingolem",
-	"Feuergolem",
-	"Eisgolem",
-	"B. Golem",
-	"Dämon",
-	"B. Dämon",
-	"Troll",
-	"Sumpfhai",
-	"Drache",
-	"Drache",
-	"M",
-	"N",
-	"O",
-	"P",
-	"Q",
-	"",
-	"Ork",
-	"Ork",
-	"Untoter Ork",
-	"Drakonier",
-	"X",
-	"Y",
-	"Z"
-};
 
-TXT_SPELLS[68] =
-{
-	"Heiliges Licht",
-	"Kleine Wundheilung",
-	"Heiliger Pfeil",
-	"Mittlere Wundheilung",
-	"Böses Vertreiben",
-	"Grosse Wundheilung",
-	"Böses Vernichten",
-	"Teleport",
-	"Zur Hafenstadt",
-	"Zum Kloster",
-	"Zum Grossbauern",
-	"Zu Xardas",
-	"Zum Pass in Khorinis",
-	"Zum Pass im Minental",
-	"Zur Burg",
-	"Zum alten Dämonenturm",
-	"Zur Taverne",
-	"T3",
-	"Licht",
-	"Feuerpfeil",
-	"Eispfeil",
-	"leichte Wunden heilen",
-	"Goblin Skelett",
-	"Feuerball",
-	"Blitz",
-	"Wolf rufen",
-	"Windfaust",
-	"Schlaf",
-	"mittlere Wunden heilen",
-	"Blitzschlag",
-	"Grosser Feuerball",
-	"Skelett",
-	"Angst",
-	"Eisblock",
-	"Kugelblitz",
-	"Golem erschaffen",
-	"Untote vernichten",
-	"Grosser Feuersturm",
-	"Kleiner Feuersturm",
-	"Eiswelle",
-	"Dämon",
-	"Vollheilung",
-	"Feuerregen",
-	"Todeshauch",
-	"Massensterben",
-	"Armee der Finsternis",
-	"Schrumpfen",
-	"Schaf",
-	"Scavenger",
-	"Riesenratte",
-	"Feldräuber",
-	"Wolf",
-	"Waran",
-	"Snapper",
-	"Warg",
-	"Feuerwaran",
-	"Lurker",
-	"Shadowbeast",
-	"Dragon Snapper",
-	"Vergessen",
-	"Heiliges Geschoss",
-	"B",
-	"C",
-	"D",
-	"E",
-	"F",
-	"G",
-	"H"
-};*/
+
+
 NAME_SPL_PalLight = "Heiliges Licht";
 NAME_SPL_PalLightHeal = "Kleine Wundheilung";
 NAME_SPL_PalHolyBolt = "Heiliger Pfeil";
@@ -312,71 +380,7 @@ NAME_SPL_TrfFireWaran = "Verwandlung Feuerwaran";
 NAME_SPL_TrfLurker = "Verwandlung Lurker";
 NAME_SPL_TrfShadowbeast = "Verwandlung Schattenläufer";
 NAME_SPL_TrfDragonSnapper = "Verwandlung Drachensnapper";
-/*
-TXT_TALENTS[22] =
-{
-	"",
-	"Einhänder",
-	"Zweihänder",
-	"Bogen",
-	"Armbrust",
-	"Schlösser öffnen",
-	"",
-	"Magie",
-	"Schleichen",
-	"",
-	"",
-	"Akrobatik",
-	"Taschendiebstahl",
-	"Schmieden",
-	"Runen erschaffen",
-	"Alchemie",
-	"Tiere ausweiden",
-	"",
-	"",
-	"",
-	"",
-	""
-};
 
-TXT_TALENTS_SKILLS[22] =
-{
-	"",
-	"Anfänger|Kämpfer|Meister",
-	"Anfänger|Kämpfer|Meister",
-	"Anfänger|Schütze|Meister",
-	"Anfänger|Schütze|Meister",
-	"-|Gelernt|-",
-	"0|1|2",
-	"0|1|2|3|4|5|6",
-	"-|Gelernt",
-	"-|-",
-	"-|-",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt",
-	"-|Gelernt"
-};
-
-TXT_INV_CAT[9] =
-{
-	"",
-	"Waffen",
-	"Rüstungen",
-	"Magie",
-	"Artefakte",
-	"Nahrung",
-	"Tränke",
-	"Schriften",
-	"Verschiedenes"
-};*/
 NAME_Paladin = "Paladin";
 NAME_Miliz = "Stadtwache";
 NAME_Torwache = "Torwache";
